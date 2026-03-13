@@ -1,0 +1,23 @@
+[project]
+name = "adscreen-converter"
+version = "1.0.0"
+description = "Automated multi-format video export for digital-out-of-home advertising"
+requires-python = ">=3.9"
+authors = [
+  { name = "Primedia" }
+]
+dependencies = [
+  "flet>=0.24.0",
+]
+
+[tool.flet]
+org = "com.primedia"
+product = "AdScreen Converter"
+company = "Primedia"
+copyright = "Copyright (C) 2025 Primedia"
+
+[tool.flet.app]
+module = "main"
+
+[tool.flet.macos]
+target_arch = "universal"

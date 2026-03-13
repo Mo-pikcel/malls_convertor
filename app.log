@@ -1,0 +1,1065 @@
+2026-03-02 23:04:14,304  INFO      Running: ffmpeg -y -loop 1 -i input/test.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-02 23:04:17,997  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-02 23:04:24,929  INFO      Running: ffmpeg -y -loop 1 -i input/test.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-02 23:04:28,520  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-02 23:04:28,675  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:960:540 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Landscape_Screens_HD_1920x1080.mp4
+2026-03-02 23:04:29,619  INFO      Exported Landscape_Screens_HD_1920x1080.mp4
+2026-03-02 23:04:29,619  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720:1280:720 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Tyger_1280x720.mp4
+2026-03-02 23:04:30,277  INFO      Exported Tyger_1280x720.mp4
+2026-03-02 23:04:30,278  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1536:896:force_original_aspect_ratio=increase,crop=1536:896:1152:632 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Rosebank_Mall_1536x896.mp4
+2026-03-02 23:04:31,095  INFO      Exported Rosebank_Mall_1536x896.mp4
+2026-03-02 23:04:31,096  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=2176:1152:force_original_aspect_ratio=increase,crop=2176:1152:832:504 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Cresta_Woolworths_Screen_2176x1152.mp4
+2026-03-02 23:04:32,169  INFO      Exported Cresta_Woolworths_Screen_2176x1152.mp4
+2026-03-02 23:04:32,170  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1152:force_original_aspect_ratio=increase,crop=1920:1152:960:504 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Bayside_Digi_Impact_1920x1152.mp4
+2026-03-02 23:04:33,140  INFO      Exported Bayside_Digi_Impact_1920x1152.mp4
+2026-03-02 23:04:33,140  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1664:896:force_original_aspect_ratio=increase,crop=1664:896:1088:632 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Paarl_Mall_Digi_Impact_1664x896.mp4
+2026-03-02 23:04:33,929  INFO      Exported Paarl_Mall_Digi_Impact_1664x896.mp4
+2026-03-02 23:04:33,930  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1040:600:force_original_aspect_ratio=increase,crop=1040:600:1400:780 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/The_Glen_1040x600.mp4
+2026-03-02 23:04:34,498  INFO      Exported The_Glen_1040x600.mp4
+2026-03-02 23:04:34,499  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Tygervalley_Foschini_3840x2160.mp4
+2026-03-02 23:04:36,607  INFO      Exported Tygervalley_Foschini_3840x2160.mp4
+2026-03-02 23:04:36,608  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=3520:1920:force_original_aspect_ratio=increase,crop=3520:1920:160:120 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Hype_Park_3520x1920.mp4
+2026-03-02 23:04:38,799  INFO      Exported Hype_Park_3520x1920.mp4
+2026-03-02 23:04:38,800  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=2304:1280:force_original_aspect_ratio=increase,crop=2304:1280:768:440 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-02 23:04:40,003  INFO      Exported Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-02 23:04:40,004  INFO      Running: ffmpeg -y -ss 0.5 -i output/Landscape_Screens_HD_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Landscape_Screens_HD_1920x1080.jpg
+2026-03-02 23:04:40,085  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tyger_1280x720.mp4 -vframes 1 -q:v 3 previews/thumb_Tyger_1280x720.jpg
+2026-03-02 23:04:40,135  INFO      Running: ffmpeg -y -ss 0.5 -i output/Rosebank_Mall_1536x896.mp4 -vframes 1 -q:v 3 previews/thumb_Rosebank_Mall_1536x896.jpg
+2026-03-02 23:04:40,202  INFO      Running: ffmpeg -y -ss 0.5 -i output/Cresta_Woolworths_Screen_2176x1152.mp4 -vframes 1 -q:v 3 previews/thumb_Cresta_Woolworths_Screen_2176x1152.jpg
+2026-03-02 23:04:40,288  INFO      Running: ffmpeg -y -ss 0.5 -i output/Bayside_Digi_Impact_1920x1152.mp4 -vframes 1 -q:v 3 previews/thumb_Bayside_Digi_Impact_1920x1152.jpg
+2026-03-02 23:04:40,370  INFO      Running: ffmpeg -y -ss 0.5 -i output/Paarl_Mall_Digi_Impact_1664x896.mp4 -vframes 1 -q:v 3 previews/thumb_Paarl_Mall_Digi_Impact_1664x896.jpg
+2026-03-02 23:04:40,440  INFO      Running: ffmpeg -y -ss 0.5 -i output/The_Glen_1040x600.mp4 -vframes 1 -q:v 3 previews/thumb_The_Glen_1040x600.jpg
+2026-03-02 23:04:40,482  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tygervalley_Foschini_3840x2160.mp4 -vframes 1 -q:v 3 previews/thumb_Tygervalley_Foschini_3840x2160.jpg
+2026-03-02 23:04:40,644  INFO      Running: ffmpeg -y -ss 0.5 -i output/Hype_Park_3520x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Hype_Park_3520x1920.jpg
+2026-03-02 23:04:40,794  INFO      Running: ffmpeg -y -ss 0.5 -i output/Southgate_Food_Court_Digi_Impact_2304x1280.mp4 -vframes 1 -q:v 3 previews/thumb_Southgate_Food_Court_Digi_Impact_2304x1280.jpg
+2026-03-02 23:04:46,171  INFO      Running: ffmpeg -y -loop 1 -i input/test.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-02 23:04:49,779  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 01:51:48,860  INFO      Running: ffmpeg -y -ss 0.5 -i input/vid-4.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 01:52:09,153  INFO      smart_crop: extracted 3 keyframes from vid-4.mp4
+2026-03-03 01:52:13,965  INFO      Running: ffmpeg -y -ss 0.5 -i input/vid-4.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 01:52:17,432  INFO      Running: ffmpeg -y -ss 0.5 -i input/vid-4.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 01:52:17,530  INFO      Running: ffmpeg -y -i input/vid-4.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Brooklyn_Mall_1920x1080.mp4
+2026-03-03 01:52:20,434  INFO      smart_crop: YOLOv8 loaded
+2026-03-03 01:52:20,786  INFO      smart_crop: YOLO added 4 boxes
+2026-03-03 01:52:35,251  INFO      Exported Brooklyn_Mall_1920x1080.mp4
+2026-03-03 01:52:35,252  INFO      Running: ffmpeg -y -ss 0.5 -i output/Brooklyn_Mall_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Brooklyn_Mall_1920x1080.jpg
+2026-03-03 01:52:35,755  INFO      Running: ffmpeg -y -ss 0.5 -i input/vid-4.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 01:52:35,857  INFO      Running: ffmpeg -y -i input/vid-4.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Brooklyn_Mall_1920x1080.mp4
+2026-03-03 01:52:36,723  INFO      smart_crop: EasyOCR loaded
+2026-03-03 01:52:38,714  INFO      Running: ffmpeg -y -ss 0.5 -i input/vid-4.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 01:52:44,389  INFO      smart_crop: EasyOCR added 10 boxes
+2026-03-03 01:52:44,389  INFO      smart_crop: 25 total importance regions detected
+2026-03-03 01:52:54,683  INFO      Exported Brooklyn_Mall_1920x1080.mp4
+2026-03-03 11:40:02,384  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:40:03,747  INFO      smart_crop: extracted 3 keyframes from 1920x1080.mp4
+2026-03-03 11:40:06,465  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:40:06,787  INFO      smart_crop: YOLOv8 loaded
+2026-03-03 11:40:06,913  INFO      smart_crop: YOLO added 1 boxes
+2026-03-03 11:40:09,282  INFO      smart_crop: EasyOCR loaded
+2026-03-03 11:40:13,122  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:40:13,268  INFO      Running: ffmpeg -y -i input/1920x1080.mp4 -vf scale=2176:1152:force_original_aspect_ratio=increase,crop=2176:1152:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Cresta_Woolworth_Screen_2176x1152.mp4
+2026-03-03 11:40:17,879  INFO      Exported Cresta_Woolworth_Screen_2176x1152.mp4
+2026-03-03 11:40:17,882  INFO      Running: ffmpeg -y -ss 0.5 -i output/Cresta_Woolworth_Screen_2176x1152.mp4 -vframes 1 -q:v 3 previews/thumb_Cresta_Woolworth_Screen_2176x1152.jpg
+2026-03-03 11:40:23,744  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:40:25,982  INFO      smart_crop: EasyOCR added 55 boxes
+2026-03-03 11:40:25,982  INFO      smart_crop: 88 total importance regions detected
+2026-03-03 11:44:37,618  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:45:07,546  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:45:17,046  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:45:17,152  INFO      Running: ffmpeg -y -i input/1920x1080.mp4 -vf scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720:320:180 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Tyger_1280x720.mp4
+2026-03-03 11:45:18,592  INFO      Exported Tyger_1280x720.mp4
+2026-03-03 11:45:18,593  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tyger_1280x720.mp4 -vframes 1 -q:v 3 previews/thumb_Tyger_1280x720.jpg
+2026-03-03 11:45:23,794  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:46:30,963  INFO      Running: ffmpeg -y -ss 0.5 -i input/1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:52:00,781  INFO      Running: ffmpeg -y -ss 0.5 -i input/2160x3840.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:52:04,399  INFO      Running: ffmpeg -y -ss 0.5 -i input/2160x3840.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 11:52:04,602  INFO      Running: ffmpeg -y -i input/2160x3840.mp4 -vf scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:540:960 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Portrait_Screens_1080x1920.mp4
+2026-03-03 11:52:07,762  INFO      Exported Portrait_Screens_1080x1920.mp4
+2026-03-03 11:52:07,762  INFO      Running: ffmpeg -y -i input/2160x3840.mp4 -vf scale=864:1344:force_original_aspect_ratio=increase,crop=864:1344:648:1248 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Golden_Acre_Impact_864x1344.mp4
+2026-03-03 11:52:09,932  INFO      Exported Golden_Acre_Impact_864x1344.mp4
+2026-03-03 11:52:09,933  INFO      Running: ffmpeg -y -i input/2160x3840.mp4 -vf scale=1088:1536:force_original_aspect_ratio=increase,crop=1088:1536:536:1152 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Portrait_Screens_1088x1536.mp4
+2026-03-03 11:52:12,874  INFO      Exported Portrait_Screens_1088x1536.mp4
+2026-03-03 11:52:12,875  INFO      Running: ffmpeg -y -i input/2160x3840.mp4 -vf scale=1600:2560:force_original_aspect_ratio=increase,crop=1600:2560:280:640 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Portrait_Screens_1600x2560.mp4
+2026-03-03 11:52:19,559  INFO      Exported Portrait_Screens_1600x2560.mp4
+2026-03-03 11:52:19,560  INFO      Running: ffmpeg -y -i input/2160x3840.mp4 -vf scale=600:720:force_original_aspect_ratio=increase,crop=600:720:780:1560 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Boardwalk_600x720.mp4
+2026-03-03 11:52:21,528  INFO      Exported Boardwalk_600x720.mp4
+2026-03-03 11:52:21,530  INFO      Running: ffmpeg -y -ss 0.5 -i output/Portrait_Screens_1080x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Portrait_Screens_1080x1920.jpg
+2026-03-03 11:52:21,622  INFO      Running: ffmpeg -y -ss 0.5 -i output/Golden_Acre_Impact_864x1344.mp4 -vframes 1 -q:v 3 previews/thumb_Golden_Acre_Impact_864x1344.jpg
+2026-03-03 11:52:21,698  INFO      Running: ffmpeg -y -ss 0.5 -i output/Portrait_Screens_1088x1536.mp4 -vframes 1 -q:v 3 previews/thumb_Portrait_Screens_1088x1536.jpg
+2026-03-03 11:52:21,796  INFO      Running: ffmpeg -y -ss 0.5 -i output/Portrait_Screens_1600x2560.mp4 -vframes 1 -q:v 3 previews/thumb_Portrait_Screens_1600x2560.jpg
+2026-03-03 11:52:21,976  INFO      Running: ffmpeg -y -ss 0.5 -i output/Boardwalk_600x720.mp4 -vframes 1 -q:v 3 previews/thumb_Boardwalk_600x720.jpg
+2026-03-03 11:52:25,523  INFO      Running: ffmpeg -y -ss 0.5 -i input/2160x3840.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:14:43,371  INFO      Running: ffmpeg -y -ss 0.5 -i input/2160x3840.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:14:49,698  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:14:51,350  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:14:54,084  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:14:55,743  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:14:55,826  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:14:56,568  INFO      Exported Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:14:56,569  INFO      Running: ffmpeg -y -ss 0.5 -i output/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Clearwater_Mugg_&_Bean_1920x1080.jpg
+2026-03-03 12:14:58,901  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:15:00,674  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:21:08,839  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:21:10,492  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:21:10,569  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:21:11,175  INFO      Exported Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:21:11,176  INFO      Running: ffmpeg -y -ss 0.5 -i output/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Clearwater_Mugg_&_Bean_1920x1080.jpg
+2026-03-03 12:21:17,360  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:21:19,133  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:26:56,138  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 11 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:26:56,361  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 12 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:26:56,605  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 13 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:26:56,847  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 14 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:26:57,872  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:27:00,748  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:27:10,794  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:27:13,279  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:27:13,372  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:27:14,603  INFO      Exported Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:27:14,605  INFO      Running: ffmpeg -y -ss 0.5 -i output/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Clearwater_Mugg_&_Bean_1920x1080.jpg
+2026-03-03 12:31:53,644  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:31:56,005  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:32:14,975  INFO      Running: ffmpeg -y -ss 0.5 -i input/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:32:19,656  INFO      Running: ffmpeg -y -ss 0.5 -i input/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:32:19,735  INFO      Running: ffmpeg -y -i input/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:32:20,303  INFO      Exported Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:32:20,304  INFO      Running: ffmpeg -y -ss 0.5 -i output/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Clearwater_Mugg_&_Bean_1920x1080.jpg
+2026-03-03 12:32:22,785  INFO      Running: ffmpeg -y -ss 0.5 -i input/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:33:07,204  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:33:09,583  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:33:12,677  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:33:15,066  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:33:15,143  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:33:16,039  INFO      Exported Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-03 12:33:16,040  INFO      Running: ffmpeg -y -ss 0.5 -i output/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Clearwater_Mugg_&_Bean_1920x1080.jpg
+2026-03-03 12:33:18,578  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:33:21,057  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:34:37,685  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_CANAL_WALK_1920x1080_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:34:40,048  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:34:57,633  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_GATEWAY_3052x1640_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:35:02,455  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:35:08,983  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_GATEWAY_3052x1640_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:35:13,816  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:35:13,942  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1536:896:force_original_aspect_ratio=increase,crop=1536:896:758:372 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Rosebank_Mall_1536x896.mp4
+2026-03-03 12:35:14,874  INFO      Exported Rosebank_Mall_1536x896.mp4
+2026-03-03 12:35:14,875  INFO      Running: ffmpeg -y -ss 0.5 -i output/Rosebank_Mall_1536x896.mp4 -vframes 1 -q:v 3 previews/thumb_Rosebank_Mall_1536x896.jpg
+2026-03-03 12:36:05,612  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:36:06,915  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:36:11,683  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:36:12,972  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:36:13,020  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1536:896:force_original_aspect_ratio=increase,crop=1536:896:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Rosebank_Mall_1536x896.mp4
+2026-03-03 12:36:13,800  INFO      Exported Rosebank_Mall_1536x896.mp4
+2026-03-03 12:36:13,801  INFO      Running: ffmpeg -y -ss 0.5 -i output/Rosebank_Mall_1536x896.mp4 -vframes 1 -q:v 3 previews/thumb_Rosebank_Mall_1536x896.jpg
+2026-03-03 12:36:17,399  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:36:18,802  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:36:44,029  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:36:45,362  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:36:45,468  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-03 12:36:52,394  INFO      smart_crop: EasyOCR added 71 boxes
+2026-03-03 12:36:52,395  INFO      smart_crop: 85 total importance regions detected
+2026-03-03 12:36:52,402  INFO      smart_crop: 1280x720→1536x896  crop=(32,0)  content_centre=(800,478)
+2026-03-03 12:36:58,520  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:36:59,935  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:37:00,050  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-03 12:37:06,136  INFO      smart_crop: EasyOCR added 71 boxes
+2026-03-03 12:37:06,136  INFO      smart_crop: 85 total importance regions detected
+2026-03-03 12:37:06,141  INFO      smart_crop: 1280x720→1536x896  crop=(32,0)  content_centre=(800,478)
+2026-03-03 12:37:06,143  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1536:896:force_original_aspect_ratio=increase,crop=1536:896:32:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Rosebank_Mall_1536x896.mp4
+2026-03-03 12:37:06,987  INFO      Exported Rosebank_Mall_1536x896.mp4
+2026-03-03 12:37:06,988  INFO      Running: ffmpeg -y -ss 0.5 -i output/Rosebank_Mall_1536x896.mp4 -vframes 1 -q:v 3 previews/thumb_Rosebank_Mall_1536x896.jpg
+2026-03-03 12:37:13,176  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:37:14,621  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:37:14,729  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-03 12:37:20,830  INFO      smart_crop: EasyOCR added 71 boxes
+2026-03-03 12:37:20,831  INFO      smart_crop: 85 total importance regions detected
+2026-03-03 12:37:20,836  INFO      smart_crop: 1280x720→1536x896  crop=(32,0)  content_centre=(800,478)
+2026-03-03 12:39:03,439  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 15 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:39:05,044  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:39:05,173  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-03 12:39:12,474  INFO      smart_crop: EasyOCR added 71 boxes
+2026-03-03 12:39:12,474  INFO      smart_crop: 85 total importance regions detected
+2026-03-03 12:39:12,481  INFO      smart_crop: 1280x720→1280x720  crop=(0,0)  content_centre=(642,384)
+2026-03-03 12:39:39,513  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:39:40,445  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:39:40,558  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-03 12:39:46,602  INFO      smart_crop: EasyOCR added 69 boxes
+2026-03-03 12:39:46,603  INFO      smart_crop: 84 total importance regions detected
+2026-03-03 12:39:46,609  INFO      smart_crop: 1280x720→1280x720  crop=(0,0)  content_centre=(642,404)
+2026-03-03 12:39:50,265  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:39:51,185  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:39:51,297  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-03 12:39:57,646  INFO      smart_crop: EasyOCR added 69 boxes
+2026-03-03 12:39:57,647  INFO      smart_crop: 84 total importance regions detected
+2026-03-03 12:39:57,653  INFO      smart_crop: 1280x720→1280x720  crop=(0,0)  content_centre=(642,404)
+2026-03-03 12:39:57,655  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Tyger_1280x720.mp4
+2026-03-03 12:39:58,183  INFO      Exported Tyger_1280x720.mp4
+2026-03-03 12:39:58,184  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tyger_1280x720.mp4 -vframes 1 -q:v 3 previews/thumb_Tyger_1280x720.jpg
+2026-03-03 12:40:03,115  INFO      Running: ffmpeg -y -loop 1 -i input/JN5067_BLUE_BARGAIN_TYGERVALLEY_1280x720_V1_FA.jpg -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-03 12:40:04,198  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-03 12:40:04,313  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-03 12:40:10,471  INFO      smart_crop: EasyOCR added 69 boxes
+2026-03-03 12:40:10,471  INFO      smart_crop: 84 total importance regions detected
+2026-03-03 12:40:10,477  INFO      smart_crop: 1280x720→1280x720  crop=(0,0)  content_centre=(642,404)
+2026-03-05 10:42:19,549  INFO      Running: ffmpeg -y -loop 1 -i input/Red & Yellow Mall Screen Mar - May.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-05 10:43:00,381  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-05 10:43:05,038  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-05 10:43:21,325  INFO      smart_crop: YOLOv8 loaded
+2026-03-05 10:43:21,439  INFO      smart_crop: YOLO added 3 boxes
+2026-03-05 10:43:23,771  INFO      smart_crop: EasyOCR loaded
+2026-03-05 10:43:46,771  INFO      smart_crop: EasyOCR added 24 boxes
+2026-03-05 10:43:46,772  INFO      smart_crop: 262 total importance regions detected
+2026-03-05 10:43:47,134  INFO      smart_crop: 4500x8000→1080x1920  crop=(0,0)  content_centre=(542,937)
+2026-03-05 10:43:53,561  INFO      Running: ffmpeg -y -loop 1 -i input/Red & Yellow Mall Screen Mar - May.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-05 10:44:21,109  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-05 10:44:24,881  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-05 10:45:05,145  INFO      smart_crop: YOLO added 3 boxes
+2026-03-05 10:45:24,477  INFO      smart_crop: EasyOCR added 24 boxes
+2026-03-05 10:45:24,478  INFO      smart_crop: 262 total importance regions detected
+2026-03-05 10:45:24,798  INFO      smart_crop: 4500x8000→1080x1920  crop=(0,0)  content_centre=(542,937)
+2026-03-05 10:45:24,802  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Portrait_Digi_Navy_Digi_Engage_1080x1920.mp4
+2026-03-05 10:45:27,940  INFO      Exported Portrait_Digi_Navy_Digi_Engage_1080x1920.mp4
+2026-03-05 10:45:27,941  INFO      Running: ffmpeg -y -ss 0.5 -i output/Portrait_Digi_Navy_Digi_Engage_1080x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Portrait_Digi_Navy_Digi_Engage_1080x1920.jpg
+2026-03-05 10:45:35,574  INFO      Running: ffmpeg -y -loop 1 -i input/Red & Yellow Mall Screen Mar - May.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-05 10:46:08,592  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-05 10:46:13,291  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-05 10:46:56,345  INFO      smart_crop: YOLO added 3 boxes
+2026-03-05 10:47:18,236  INFO      smart_crop: EasyOCR added 24 boxes
+2026-03-05 10:47:18,236  INFO      smart_crop: 262 total importance regions detected
+2026-03-05 10:47:18,559  INFO      smart_crop: 4500x8000→1080x1920  crop=(0,0)  content_centre=(542,937)
+2026-03-06 13:12:43,446  INFO      Running: ffmpeg -y -i input/compress_2688x960.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_compress_2688x960.mp4
+2026-03-06 13:13:10,344  INFO      Running: ffmpeg -y -i input/compress_2688x960.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_compress_2688x960.mp4
+2026-03-06 13:16:26,984  INFO      Running: ffmpeg -y -i input/compress_2688x960.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_2688x960.mp4
+2026-03-06 13:16:28,487  INFO      Running: ffmpeg -y -i input/compress_3840x2160_Tyger Valley Lift Shaft.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_3840x2160_Tyger Valley Lift Shaft.mp4
+2026-03-06 13:16:31,041  INFO      Running: ffmpeg -y -i input/compress_Canal Walk Digi Impact cube.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Canal Walk Digi Impact cube.mp4
+2026-03-06 13:16:31,793  INFO      Running: ffmpeg -y -i input/compress_Centre Court.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Centre Court.mp4
+2026-03-06 13:16:33,084  INFO      Running: ffmpeg -y -i input/compress_Checkers & Pick n Pay.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Checkers & Pick n Pay.mp4
+2026-03-06 13:16:34,515  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152_1.mp4
+2026-03-06 13:16:36,290  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_BROOKLYN MALL_PRIMEDIA_1152x640_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_BROOKLYN MALL_PRIMEDIA_1152x640_1.mp4
+2026-03-06 13:16:37,024  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CANAL WALK_PRIMEDIA_1280x704_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CANAL WALK_PRIMEDIA_1280x704_1.mp4
+2026-03-06 13:16:37,850  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CANAL WALK_PRIMEDIA_1920x1080_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CANAL WALK_PRIMEDIA_1920x1080_1.mp4
+2026-03-06 13:16:39,434  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CAPE GATE_PRIMEDIA_1920x1080_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CAPE GATE_PRIMEDIA_1920x1080_1.mp4
+2026-03-06 13:16:41,031  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CLEARWATER MALL_PRIMEDIA_2176x1216_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CLEARWATER MALL_PRIMEDIA_2176x1216_1.mp4
+2026-03-06 13:16:43,003  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CLEARWATER_PRIMEDIA_1920x1080_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CLEARWATER_PRIMEDIA_1920x1080_1.mp4
+2026-03-06 13:16:44,641  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CRESTA MALL_PRIMEDIA_2176x1152_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_CRESTA MALL_PRIMEDIA_2176x1152_1.mp4
+2026-03-06 13:16:46,664  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_FOURWAYS MALL_PRIMEDIA_832x1666_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_FOURWAYS MALL_PRIMEDIA_832x1666_1.mp4
+2026-03-06 13:16:47,893  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_FOURWAYS MALL_PRIMEDIA_1536x1088_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_FOURWAYS MALL_PRIMEDIA_1536x1088_1.mp4
+2026-03-06 13:16:49,202  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_FOURWAYS MALL_PRIMEDIA_4960x384_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_FOURWAYS MALL_PRIMEDIA_4960x384_1.mp4
+2026-03-06 13:16:51,177  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_GARDENS SHOPPING CENTRE_PRIMEDIA_1152x640_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_GARDENS SHOPPING CENTRE_PRIMEDIA_1152x640_1.mp4
+2026-03-06 13:16:51,853  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366_1_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366_1_1.mp4
+2026-03-06 13:16:52,936  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_HYDE PARK_PRIMEDIA_1920x1083_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_HYDE PARK_PRIMEDIA_1920x1083_1.mp4
+2026-03-06 13:16:54,559  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2048x384_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2048x384_1.mp4
+2026-03-06 13:16:55,357  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2048x420_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2048x420_1.mp4
+2026-03-06 13:16:56,238  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2816x384_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2816x384_1.mp4
+2026-03-06 13:16:57,219  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2960x1480_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2960x1480_1.mp4
+2026-03-06 13:17:00,340  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_3200x768_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_3200x768_1.mp4
+2026-03-06 13:17:02,310  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MONTE CASINO_PRIMEDIA_1280x704_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MONTE CASINO_PRIMEDIA_1280x704_1.mp4
+2026-03-06 13:17:03,140  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MONTE CASINO_PRIMEDIA_1664x960_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MONTE CASINO_PRIMEDIA_1664x960_1.mp4
+2026-03-06 13:17:04,432  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MONTE CASINO_PRIMEDIA_1979x1145_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MONTE CASINO_PRIMEDIA_1979x1145_1.mp4
+2026-03-06 13:17:06,195  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MONTE CASINO_PRIMEDIA_2688x768_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MONTE CASINO_PRIMEDIA_2688x768_1.mp4
+2026-03-06 13:17:07,883  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_N1 CITY_PRIMEDIA_1280x640_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_N1 CITY_PRIMEDIA_1280x640_1.mp4
+2026-03-06 13:17:08,609  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAARL MALL_PRIMEDIA_1664x896_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAARL MALL_PRIMEDIA_1664x896_1.mp4
+2026-03-06 13:17:09,828  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAVILLION MALL_PRIMEDIA_725x1400_1_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAVILLION MALL_PRIMEDIA_725x1400_1_1.mp4
+2026-03-06 13:17:10,732  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAVILLION MALL_PRIMEDIA_1152x640_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAVILLION MALL_PRIMEDIA_1152x640_1.mp4
+2026-03-06 13:17:11,392  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAVILLION MALL_PRIMEDIA_1160x1160_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAVILLION MALL_PRIMEDIA_1160x1160_1.mp4
+2026-03-06 13:17:12,457  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAVILLION MALL_PRIMEDIA_1920x1080_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_PAVILLION MALL_PRIMEDIA_1920x1080_1.mp4
+2026-03-06 13:17:14,002  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_ROSEBANK MALL_PRIMEDIA_1536x896_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_ROSEBANK MALL_PRIMEDIA_1536x896_1.mp4
+2026-03-06 13:17:15,098  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_SOMERSET MALL_PRIMEDIA_640x1024_1_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_SOMERSET MALL_PRIMEDIA_640x1024_1_1.mp4
+2026-03-06 13:17:15,746  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_SOUTHGATE MALL_PRIMEDIA_1536x1152_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_SOUTHGATE MALL_PRIMEDIA_1536x1152_1.mp4
+2026-03-06 13:17:17,086  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_SOUTHGATE MALL_PRIMEDIA_2304x1280_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_SOUTHGATE MALL_PRIMEDIA_2304x1280_1.mp4
+2026-03-06 13:17:19,237  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TABLE BAY MALL_LIFT SCREEN 1_PRIMEDIA_2688x1728_1_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TABLE BAY MALL_LIFT SCREEN 1_PRIMEDIA_2688x1728_1_1.mp4
+2026-03-06 13:17:22,563  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TABLE BAY MALL_LIFT SCREEN 2_PRIMEDIA_2880x1728_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TABLE BAY MALL_LIFT SCREEN 2_PRIMEDIA_2880x1728_1.mp4
+2026-03-06 13:17:26,127  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_THE GLEN_PRIMEDIA_1920x1080_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_THE GLEN_PRIMEDIA_1920x1080_1.mp4
+2026-03-06 13:17:27,695  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_720x480_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_720x480_1.mp4
+2026-03-06 13:17:28,071  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_768x1088_1_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_768x1088_1_1.mp4
+2026-03-06 13:17:28,882  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_1280x720_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_1280x720_1.mp4
+2026-03-06 13:17:29,687  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_1840x480_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_1840x480_1.mp4
+2026-03-06 13:17:30,547  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_WOODLANDS MALL_PRIMEDIA_1152x640_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_WOODLANDS MALL_PRIMEDIA_1152x640_1.mp4
+2026-03-06 13:17:31,217  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_WOODLANDS MALL_PRIMEDIA_2176x1216_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_WOODLANDS MALL_PRIMEDIA_2176x1216_1.mp4
+2026-03-06 13:17:33,116  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_WOODLANDS MALL_PRIMEDIA_2432x1344_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_WOODLANDS MALL_PRIMEDIA_2432x1344_1.mp4
+2026-03-06 13:17:35,516  INFO      Running: ffmpeg -y -i input/compress_FOURWAYS - TEMPLATE.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_FOURWAYS - TEMPLATE.mp4
+2026-03-06 13:17:36,319  INFO      Running: ffmpeg -y -i input/compress_Hydepark Digi Impact.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Hydepark Digi Impact.mp4
+2026-03-06 13:17:38,280  INFO      Running: ffmpeg -y -i input/compress_Menlyn- Sky LED.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Menlyn- Sky LED.mp4
+2026-03-06 13:17:38,945  INFO      Running: ffmpeg -y -i input/compress_Rosebank FNB pillar.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Rosebank FNB pillar.mp4
+2026-03-06 13:17:39,201  INFO      Running: ffmpeg -y -i input/compress_Rosebank pillar.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Rosebank pillar.mp4
+2026-03-06 13:17:40,032  INFO      Running: ffmpeg -y -i input/compress_Somerset Pillars.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Somerset Pillars.mp4
+2026-03-06 13:17:41,905  INFO      Running: ffmpeg -y -i input/compress_Tyger Valley Digi Impact-Food Court.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Tyger Valley Digi Impact-Food Court.mp4
+2026-03-06 14:44:32,236  INFO      Running: ffmpeg -y -i input/compress_Boardwalk.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Boardwalk.mp4
+2026-03-06 14:44:32,624  INFO      Running: ffmpeg -y -i input/compress_Pavilion Full Pillar_1280x1152.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Pavilion Full Pillar_1280x1152.mp4
+2026-03-06 14:44:33,262  INFO      Running: ffmpeg -y -i input/compress_Pavilion Half Pillar_640x1152.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Pavilion Half Pillar_640x1152.mp4
+2026-03-07 13:10:56,776  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_720x480.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 14:30:01,927  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2048x384.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 14:30:21,437  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_MENLYN PARK_PRIMEDIA_2048x384.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 14:30:37,225  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_768x1088_1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 14:30:47,590  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_768x1088_1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 14:30:47,630  INFO      Running: ffmpeg -y -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_768x1088_1.mp4 -vf scale=1920:860:force_original_aspect_ratio=increase,crop=1920:860:0:114 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/1920x860_1920x860.mp4
+2026-03-07 14:30:49,258  INFO      Exported 1920x860_1920x860.mp4
+2026-03-07 14:30:49,259  INFO      Running: ffmpeg -y -ss 0.5 -i output/1920x860_1920x860.mp4 -vframes 1 -q:v 3 previews/thumb_1920x860_1920x860.jpg
+2026-03-07 14:30:56,684  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_768x1088_1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:50:56,612  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:51:01,854  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:51:12,987  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:51:18,300  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:51:18,577  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=462:264:force_original_aspect_ratio=increase,crop=462:264:1689:948 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/462x264_462x264.mp4
+2026-03-07 20:51:19,106  INFO      Exported 462x264_462x264.mp4
+2026-03-07 20:51:19,106  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=576:288:force_original_aspect_ratio=increase,crop=576:288:1632:936 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/576x288_576x288.mp4
+2026-03-07 20:51:19,611  INFO      Exported 576x288_576x288.mp4
+2026-03-07 20:51:19,611  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=768:384:force_original_aspect_ratio=increase,crop=768:384:1536:888 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/768x384_768x384.mp4
+2026-03-07 20:51:20,181  INFO      Exported 768x384_768x384.mp4
+2026-03-07 20:51:20,182  INFO      Running: ffmpeg -y -ss 0.5 -i output/462x264_462x264.mp4 -vframes 1 -q:v 3 previews/thumb_462x264_462x264.jpg
+2026-03-07 20:51:20,212  INFO      Running: ffmpeg -y -ss 0.5 -i output/576x288_576x288.mp4 -vframes 1 -q:v 3 previews/thumb_576x288_576x288.jpg
+2026-03-07 20:51:20,245  INFO      Running: ffmpeg -y -ss 0.5 -i output/768x384_768x384.mp4 -vframes 1 -q:v 3 previews/thumb_768x384_768x384.jpg
+2026-03-07 20:51:26,776  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:51:31,943  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:53:00,821  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:53:06,067  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:53:16,884  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:53:22,088  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:53:47,108  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:53:52,153  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:53:52,687  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:53:53,116  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:54:02,756  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:54:07,098  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:54:12,263  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:54:14,881  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:54:20,091  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:54:22,170  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:54:27,240  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:54:43,909  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:54:48,945  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:55:03,567  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:55:06,237  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:55:13,518  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:55:15,308  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:55:20,497  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:55:24,206  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:55:29,375  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:55:38,026  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:55:43,159  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:55:53,310  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:55:58,358  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:55:59,386  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:55:59,609  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:56:09,190  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:56:11,326  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:56:16,393  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:56:17,131  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:56:21,068  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:56:27,212  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:56:56,131  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:57:01,175  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:57:06,540  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:57:08,119  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:57:16,516  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:57:43,296  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:57:48,393  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 20:57:48,663  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=462:264:force_original_aspect_ratio=increase,crop=462:264:1689:948 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/462x264_462x264.mp4
+2026-03-07 20:57:49,176  INFO      Exported 462x264_462x264.mp4
+2026-03-07 20:57:49,177  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=576:288:force_original_aspect_ratio=increase,crop=576:288:1632:936 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/576x288_576x288.mp4
+2026-03-07 20:57:49,675  INFO      Exported 576x288_576x288.mp4
+2026-03-07 20:57:49,676  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=768:384:force_original_aspect_ratio=increase,crop=768:384:1536:888 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/768x384_768x384.mp4
+2026-03-07 20:57:50,300  INFO      Exported 768x384_768x384.mp4
+2026-03-07 20:57:50,301  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1856:464:force_original_aspect_ratio=increase,crop=1856:464:992:848 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/1856x464_1856x464.mp4
+2026-03-07 20:57:51,081  INFO      Exported 1856x464_1856x464.mp4
+2026-03-07 20:57:51,082  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1560:400:force_original_aspect_ratio=increase,crop=1560:400:1140:880 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/1560x400_1560x400.mp4
+2026-03-07 20:57:51,763  INFO      Exported 1560x400_1560x400.mp4
+2026-03-07 20:57:51,764  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=720:360:force_original_aspect_ratio=increase,crop=720:360:1560:900 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/720x360_720x360.mp4
+2026-03-07 20:57:52,318  INFO      Exported 720x360_720x360.mp4
+2026-03-07 20:57:52,319  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1280:640:force_original_aspect_ratio=increase,crop=1280:640:1280:760 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/1280x640_1280x640.mp4
+2026-03-07 20:57:53,148  INFO      Exported 1280x640_1280x640.mp4
+2026-03-07 20:57:53,149  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=624:304:force_original_aspect_ratio=increase,crop=624:304:1608:928 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/624x304_624x304.mp4
+2026-03-07 20:57:53,666  INFO      Exported 624x304_624x304.mp4
+2026-03-07 20:57:53,667  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1008:496:force_original_aspect_ratio=increase,crop=1008:496:1416:832 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/1008x496_1008x496.mp4
+2026-03-07 20:57:54,330  INFO      Exported 1008x496_1008x496.mp4
+2026-03-07 20:57:54,331  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1152:320:force_original_aspect_ratio=increase,crop=1152:320:1344:920 -c:v libx264 -crf 23 -preset slow -movflags +faststart output/1152x320_1152x320.mp4
+2026-03-07 20:57:54,895  INFO      Exported 1152x320_1152x320.mp4
+2026-03-07 20:57:54,896  INFO      Running: ffmpeg -y -ss 0.5 -i output/462x264_462x264.mp4 -vframes 1 -q:v 3 previews/thumb_462x264_462x264.jpg
+2026-03-07 20:57:54,927  INFO      Running: ffmpeg -y -ss 0.5 -i output/576x288_576x288.mp4 -vframes 1 -q:v 3 previews/thumb_576x288_576x288.jpg
+2026-03-07 20:57:54,962  INFO      Running: ffmpeg -y -ss 0.5 -i output/768x384_768x384.mp4 -vframes 1 -q:v 3 previews/thumb_768x384_768x384.jpg
+2026-03-07 20:57:55,000  INFO      Running: ffmpeg -y -ss 0.5 -i output/1856x464_1856x464.mp4 -vframes 1 -q:v 3 previews/thumb_1856x464_1856x464.jpg
+2026-03-07 20:57:55,045  INFO      Running: ffmpeg -y -ss 0.5 -i output/1560x400_1560x400.mp4 -vframes 1 -q:v 3 previews/thumb_1560x400_1560x400.jpg
+2026-03-07 20:57:55,086  INFO      Running: ffmpeg -y -ss 0.5 -i output/720x360_720x360.mp4 -vframes 1 -q:v 3 previews/thumb_720x360_720x360.jpg
+2026-03-07 20:57:55,122  INFO      Running: ffmpeg -y -ss 0.5 -i output/1280x640_1280x640.mp4 -vframes 1 -q:v 3 previews/thumb_1280x640_1280x640.jpg
+2026-03-07 20:57:55,174  INFO      Running: ffmpeg -y -ss 0.5 -i output/624x304_624x304.mp4 -vframes 1 -q:v 3 previews/thumb_624x304_624x304.jpg
+2026-03-07 20:57:55,207  INFO      Running: ffmpeg -y -ss 0.5 -i output/1008x496_1008x496.mp4 -vframes 1 -q:v 3 previews/thumb_1008x496_1008x496.jpg
+2026-03-07 20:57:55,250  INFO      Running: ffmpeg -y -ss 0.5 -i output/1152x320_1152x320.mp4 -vframes 1 -q:v 3 previews/thumb_1152x320_1152x320.jpg
+2026-03-07 20:58:00,130  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 20:58:05,554  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:07:35,703  INFO      Running: ffmpeg -y -ss 0.5 -i input/1152x320_1152x320.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:15:30,948  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:15:36,227  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:15:59,716  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:16:04,824  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:16:05,088  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:960:540 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Landscape_Screens_HD_1920x1080.mp4
+2026-03-07 22:16:06,534  INFO      Exported Landscape_Screens_HD_1920x1080.mp4
+2026-03-07 22:16:06,534  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720:1280:720 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Tyger_1280x720.mp4
+2026-03-07 22:16:07,430  INFO      Exported Tyger_1280x720.mp4
+2026-03-07 22:16:07,430  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1536:896:force_original_aspect_ratio=increase,crop=1536:896:1152:632 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Rosebank_Mall_1536x896.mp4
+2026-03-07 22:16:08,572  INFO      Exported Rosebank_Mall_1536x896.mp4
+2026-03-07 22:16:08,573  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=2176:1152:force_original_aspect_ratio=increase,crop=2176:1152:832:504 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Cresta_Woolworths_Screen_2176x1152.mp4
+2026-03-07 22:16:10,191  INFO      Exported Cresta_Woolworths_Screen_2176x1152.mp4
+2026-03-07 22:16:10,191  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1152:force_original_aspect_ratio=increase,crop=1920:1152:960:504 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Bayside_Digi_Impact_1920x1152.mp4
+2026-03-07 22:16:11,699  INFO      Exported Bayside_Digi_Impact_1920x1152.mp4
+2026-03-07 22:16:11,700  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1664:896:force_original_aspect_ratio=increase,crop=1664:896:1088:632 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Paarl_Mall_Digi_Impact_1664x896.mp4
+2026-03-07 22:16:12,885  INFO      Exported Paarl_Mall_Digi_Impact_1664x896.mp4
+2026-03-07 22:16:12,886  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1040:600:force_original_aspect_ratio=increase,crop=1040:600:1400:780 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/The_Glen_1040x600.mp4
+2026-03-07 22:16:13,656  INFO      Exported The_Glen_1040x600.mp4
+2026-03-07 22:16:13,657  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Tygervalley_Foschini_3840x2160.mp4
+2026-03-07 22:16:17,228  INFO      Exported Tygervalley_Foschini_3840x2160.mp4
+2026-03-07 22:16:17,229  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=3520:1920:force_original_aspect_ratio=increase,crop=3520:1920:160:120 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Hype_Park_3520x1920.mp4
+2026-03-07 22:16:20,761  INFO      Exported Hype_Park_3520x1920.mp4
+2026-03-07 22:16:20,762  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=2304:1280:force_original_aspect_ratio=increase,crop=2304:1280:768:440 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-07 22:16:22,615  INFO      Exported Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-07 22:16:22,616  INFO      Running: ffmpeg -y -ss 0.5 -i output/Landscape_Screens_HD_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Landscape_Screens_HD_1920x1080.jpg
+2026-03-07 22:16:22,737  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tyger_1280x720.mp4 -vframes 1 -q:v 3 previews/thumb_Tyger_1280x720.jpg
+2026-03-07 22:16:22,802  INFO      Running: ffmpeg -y -ss 0.5 -i output/Rosebank_Mall_1536x896.mp4 -vframes 1 -q:v 3 previews/thumb_Rosebank_Mall_1536x896.jpg
+2026-03-07 22:16:22,896  INFO      Running: ffmpeg -y -ss 0.5 -i output/Cresta_Woolworths_Screen_2176x1152.mp4 -vframes 1 -q:v 3 previews/thumb_Cresta_Woolworths_Screen_2176x1152.jpg
+2026-03-07 22:16:23,029  INFO      Running: ffmpeg -y -ss 0.5 -i output/Bayside_Digi_Impact_1920x1152.mp4 -vframes 1 -q:v 3 previews/thumb_Bayside_Digi_Impact_1920x1152.jpg
+2026-03-07 22:16:23,153  INFO      Running: ffmpeg -y -ss 0.5 -i output/Paarl_Mall_Digi_Impact_1664x896.mp4 -vframes 1 -q:v 3 previews/thumb_Paarl_Mall_Digi_Impact_1664x896.jpg
+2026-03-07 22:16:23,250  INFO      Running: ffmpeg -y -ss 0.5 -i output/The_Glen_1040x600.mp4 -vframes 1 -q:v 3 previews/thumb_The_Glen_1040x600.jpg
+2026-03-07 22:16:23,304  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tygervalley_Foschini_3840x2160.mp4 -vframes 1 -q:v 3 previews/thumb_Tygervalley_Foschini_3840x2160.jpg
+2026-03-07 22:16:23,593  INFO      Running: ffmpeg -y -ss 0.5 -i output/Hype_Park_3520x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Hype_Park_3520x1920.jpg
+2026-03-07 22:16:23,862  INFO      Running: ffmpeg -y -ss 0.5 -i output/Southgate_Food_Court_Digi_Impact_2304x1280.mp4 -vframes 1 -q:v 3 previews/thumb_Southgate_Food_Court_Digi_Impact_2304x1280.jpg
+2026-03-07 22:16:30,844  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:16:36,098  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:24:51,135  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:24:56,347  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:27:20,573  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:27:25,688  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:28:08,955  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-4.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:28:09,032  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-4.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:28:09,206  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-4.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:28:09,309  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-4.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:28:09,449  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-4.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:28:38,188  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:28:55,006  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-4.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:29:00,007  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 22:29:00,268  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:1380:120 -c:v libx264 -crf 24 -preset slow -movflags +faststart output/Portrait_Digi_Navy_Digi_Engage_1080x1920.mp4
+2026-03-07 22:29:01,661  INFO      Exported Portrait_Digi_Navy_Digi_Engage_1080x1920.mp4
+2026-03-07 22:29:01,662  INFO      Running: ffmpeg -y -ss 0.5 -i output/Portrait_Digi_Navy_Digi_Engage_1080x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Portrait_Digi_Navy_Digi_Engage_1080x1920.jpg
+2026-03-07 22:29:10,926  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-4.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-07 22:29:16,256  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 23:28:03,217  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_DIGI ENGAGE_PRIMEDIA_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 23:28:08,827  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_DIGI ENGAGE_PRIMEDIA_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-07 23:28:08,892  INFO      Running: ffmpeg -y -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_DIGI ENGAGE_PRIMEDIA_1920x1080.mp4 -vf scale=600:720:force_original_aspect_ratio=increase,crop=600:720:660:180 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/Boardwalk_600x720.mp4
+2026-03-07 23:28:09,418  INFO      Exported Boardwalk_600x720.mp4
+2026-03-07 23:28:09,419  INFO      Running: ffmpeg -y -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_DIGI ENGAGE_PRIMEDIA_1920x1080.mp4 -vf scale=1664:896:force_original_aspect_ratio=increase,crop=1664:896:128:92 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/Paarl_Mall_Digi_Impact_1664x896.mp4
+2026-03-07 23:28:10,493  INFO      Exported Paarl_Mall_Digi_Impact_1664x896.mp4
+2026-03-07 23:28:10,494  INFO      Running: ffmpeg -y -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_DIGI ENGAGE_PRIMEDIA_1920x1080.mp4 -vf scale=3200:768:force_original_aspect_ratio=increase,crop=3200:768:0:156 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/Menlyn_Cape_Union_Mart_3200x768.mp4
+2026-03-07 23:28:12,153  INFO      Exported Menlyn_Cape_Union_Mart_3200x768.mp4
+2026-03-07 23:28:12,154  INFO      Running: ffmpeg -y -ss 0.5 -i output/Boardwalk_600x720.mp4 -vframes 1 -q:v 3 previews/thumb_Boardwalk_600x720.jpg
+2026-03-07 23:28:12,187  INFO      Running: ffmpeg -y -ss 0.5 -i output/Paarl_Mall_Digi_Impact_1664x896.mp4 -vframes 1 -q:v 3 previews/thumb_Paarl_Mall_Digi_Impact_1664x896.jpg
+2026-03-07 23:28:12,242  INFO      Running: ffmpeg -y -ss 0.5 -i output/Menlyn_Cape_Union_Mart_3200x768.mp4 -vframes 1 -q:v 3 previews/thumb_Menlyn_Cape_Union_Mart_3200x768.jpg
+2026-03-07 23:28:21,274  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_FORMULA 1_SUNDAY 8 MAR_DIGI ENGAGE_PRIMEDIA_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-08 00:53:10,656  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-1.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-08 00:53:10,817  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-1.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-08 00:53:10,929  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-1.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-08 00:53:26,032  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-08 00:53:29,696  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-1.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-08 00:53:34,926  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-08 00:53:35,209  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:960:540 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/1920×1080_1920x1080.mp4
+2026-03-08 00:53:36,457  INFO      Exported 1920×1080_1920x1080.mp4
+2026-03-08 00:53:36,458  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=462:264:force_original_aspect_ratio=increase,crop=462:264:1689:948 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/462×264_462x264.mp4
+2026-03-08 00:53:36,939  INFO      Exported 462×264_462x264.mp4
+2026-03-08 00:53:36,940  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=576:288:force_original_aspect_ratio=increase,crop=576:288:1632:936 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/576×288_576x288.mp4
+2026-03-08 00:53:37,434  INFO      Exported 576×288_576x288.mp4
+2026-03-08 00:53:37,435  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1856:464:force_original_aspect_ratio=increase,crop=1856:464:992:848 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/1856×464_1856x464.mp4
+2026-03-08 00:53:38,174  INFO      Exported 1856×464_1856x464.mp4
+2026-03-08 00:53:38,174  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1560:400:force_original_aspect_ratio=increase,crop=1560:400:1140:880 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/1560×400_1560x400.mp4
+2026-03-08 00:53:38,832  INFO      Exported 1560×400_1560x400.mp4
+2026-03-08 00:53:38,833  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=768:384:force_original_aspect_ratio=increase,crop=768:384:1536:888 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/768×384_768x384.mp4
+2026-03-08 00:53:39,391  INFO      Exported 768×384_768x384.mp4
+2026-03-08 00:53:39,392  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=896:576:force_original_aspect_ratio=increase,crop=896:576:1472:792 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/896×576_896x576.mp4
+2026-03-08 00:53:40,053  INFO      Exported 896×576_896x576.mp4
+2026-03-08 00:53:40,054  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=720:360:force_original_aspect_ratio=increase,crop=720:360:1560:900 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/720×360_720x360.mp4
+2026-03-08 00:53:40,599  INFO      Exported 720×360_720x360.mp4
+2026-03-08 00:53:40,600  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1280:640:force_original_aspect_ratio=increase,crop=1280:640:1280:760 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/1280×640_1280x640.mp4
+2026-03-08 00:53:41,362  INFO      Exported 1280×640_1280x640.mp4
+2026-03-08 00:53:41,363  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=624:304:force_original_aspect_ratio=increase,crop=624:304:1608:928 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/624×304_624x304.mp4
+2026-03-08 00:53:41,879  INFO      Exported 624×304_624x304.mp4
+2026-03-08 00:53:41,879  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1008:496:force_original_aspect_ratio=increase,crop=1008:496:1416:832 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/1008×496_1008x496.mp4
+2026-03-08 00:53:42,544  INFO      Exported 1008×496_1008x496.mp4
+2026-03-08 00:53:42,545  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1152:320:force_original_aspect_ratio=increase,crop=1152:320:1344:920 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/1152×320_1152x320.mp4
+2026-03-08 00:53:43,110  INFO      Exported 1152×320_1152x320.mp4
+2026-03-08 00:53:43,111  INFO      Running: ffmpeg -y -ss 0.5 -i output/1920×1080_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_1920×1080_1920x1080.jpg
+2026-03-08 00:53:43,200  INFO      Running: ffmpeg -y -ss 0.5 -i output/462×264_462x264.mp4 -vframes 1 -q:v 3 previews/thumb_462×264_462x264.jpg
+2026-03-08 00:53:43,230  INFO      Running: ffmpeg -y -ss 0.5 -i output/576×288_576x288.mp4 -vframes 1 -q:v 3 previews/thumb_576×288_576x288.jpg
+2026-03-08 00:53:43,262  INFO      Running: ffmpeg -y -ss 0.5 -i output/1856×464_1856x464.mp4 -vframes 1 -q:v 3 previews/thumb_1856×464_1856x464.jpg
+2026-03-08 00:53:43,305  INFO      Running: ffmpeg -y -ss 0.5 -i output/1560×400_1560x400.mp4 -vframes 1 -q:v 3 previews/thumb_1560×400_1560x400.jpg
+2026-03-08 00:53:43,346  INFO      Running: ffmpeg -y -ss 0.5 -i output/768×384_768x384.mp4 -vframes 1 -q:v 3 previews/thumb_768×384_768x384.jpg
+2026-03-08 00:53:43,381  INFO      Running: ffmpeg -y -ss 0.5 -i output/896×576_896x576.mp4 -vframes 1 -q:v 3 previews/thumb_896×576_896x576.jpg
+2026-03-08 00:53:43,420  INFO      Running: ffmpeg -y -ss 0.5 -i output/720×360_720x360.mp4 -vframes 1 -q:v 3 previews/thumb_720×360_720x360.jpg
+2026-03-08 00:53:43,454  INFO      Running: ffmpeg -y -ss 0.5 -i output/1280×640_1280x640.mp4 -vframes 1 -q:v 3 previews/thumb_1280×640_1280x640.jpg
+2026-03-08 00:53:43,501  INFO      Running: ffmpeg -y -ss 0.5 -i output/624×304_624x304.mp4 -vframes 1 -q:v 3 previews/thumb_624×304_624x304.jpg
+2026-03-08 00:53:43,533  INFO      Running: ffmpeg -y -ss 0.5 -i output/1008×496_1008x496.mp4 -vframes 1 -q:v 3 previews/thumb_1008×496_1008x496.jpg
+2026-03-08 00:53:43,573  INFO      Running: ffmpeg -y -ss 0.5 -i output/1152×320_1152x320.mp4 -vframes 1 -q:v 3 previews/thumb_1152×320_1152x320.jpg
+2026-03-08 00:53:51,391  INFO      Running: ffmpeg -y -loop 1 -i input/MasterChef--Contestants-1.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-08 00:53:56,537  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 21:45:49,417  INFO      Running: ffmpeg -y -ss 0.5 -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 21:45:50,561  INFO      smart_crop: extracted 3 keyframes from 2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4
+2026-03-09 21:45:51,232  INFO      smart_crop: 27 total importance regions detected
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→3520x1920  crop=(0,60)  content_centre=(1933,1040)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1536x896  crop=(58,0)  content_centre=(875,470)
+2026-03-09 21:45:51,278  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:55,556  INFO      Running: ffmpeg -y -ss 0.5 -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 21:45:56,073  INFO      smart_crop: extracted 3 keyframes from 2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4
+2026-03-09 21:45:56,690  INFO      smart_crop: 27 total importance regions detected
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→3520x1920  crop=(0,60)  content_centre=(1933,1040)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1536x896  crop=(58,0)  content_centre=(875,470)
+2026-03-09 21:45:56,716  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:01,123  INFO      Running: ffmpeg -y -ss 0.5 -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 21:46:01,635  INFO      smart_crop: extracted 3 keyframes from 2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4
+2026-03-09 21:46:02,256  INFO      smart_crop: 27 total importance regions detected
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→3520x1920  crop=(0,60)  content_centre=(1933,1040)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1536x896  crop=(58,0)  content_centre=(875,470)
+2026-03-09 21:46:02,282  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:07,275  INFO      Running: ffmpeg -y -ss 0.5 -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 21:46:07,788  INFO      smart_crop: extracted 3 keyframes from 2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4
+2026-03-09 21:46:08,416  INFO      smart_crop: 27 total importance regions detected
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→3520x1920  crop=(0,60)  content_centre=(1933,1040)
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,441  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,442  INFO      smart_crop: 1920x1080→1536x896  crop=(58,0)  content_centre=(875,470)
+2026-03-09 21:46:08,442  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:46:08,447  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Brooklyn_Mall_1920x1080.mp4
+2026-03-09 21:46:11,400  INFO      Exported Brooklyn_Mall_1920x1080.mp4
+2026-03-09 21:46:11,401  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Clearwater_Food_Court_1920x1080.mp4
+2026-03-09 21:46:14,385  INFO      Exported Clearwater_Food_Court_1920x1080.mp4
+2026-03-09 21:46:14,386  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-09 21:46:17,463  INFO      Exported Clearwater_Mugg_&_Bean_1920x1080.mp4
+2026-03-09 21:46:17,464  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Clearwater_Pick_n_Pay_1920x1080.mp4
+2026-03-09 21:46:20,536  INFO      Exported Clearwater_Pick_n_Pay_1920x1080.mp4
+2026-03-09 21:46:20,537  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=3520:1920:force_original_aspect_ratio=increase,crop=3520:1920:0:60 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Hype_Park_3520x1920.mp4
+2026-03-09 21:46:29,369  INFO      Exported Hype_Park_3520x1920.mp4
+2026-03-09 21:46:29,370  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Menlyn_Aviary_Court_1920x1080.mp4
+2026-03-09 21:46:32,633  INFO      Exported Menlyn_Aviary_Court_1920x1080.mp4
+2026-03-09 21:46:32,634  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Monte_Casino_Exit_to_Piazza_1920x1080.mp4
+2026-03-09 21:46:35,753  INFO      Exported Monte_Casino_Exit_to_Piazza_1920x1080.mp4
+2026-03-09 21:46:35,754  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Monte_Casino_Fego_1920x1080.mp4
+2026-03-09 21:46:39,070  INFO      Exported Monte_Casino_Fego_1920x1080.mp4
+2026-03-09 21:46:39,071  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Monte_Casino_Nikos_1920x1080.mp4
+2026-03-09 21:46:42,378  INFO      Exported Monte_Casino_Nikos_1920x1080.mp4
+2026-03-09 21:46:42,379  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1536:896:force_original_aspect_ratio=increase,crop=1536:896:58:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Rosebank_Mall_1536x896.mp4
+2026-03-09 21:46:44,792  INFO      Exported Rosebank_Mall_1536x896.mp4
+2026-03-09 21:46:44,793  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 26 -preset slow -movflags +faststart output/Woodlands_1920x1080.mp4
+2026-03-09 21:46:47,852  INFO      Exported Woodlands_1920x1080.mp4
+2026-03-09 21:46:47,853  INFO      Running: ffmpeg -y -ss 0.5 -i output/Brooklyn_Mall_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Brooklyn_Mall_1920x1080.jpg
+2026-03-09 21:46:47,925  INFO      Running: ffmpeg -y -ss 0.5 -i output/Clearwater_Food_Court_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Clearwater_Food_Court_1920x1080.jpg
+2026-03-09 21:46:47,997  INFO      Running: ffmpeg -y -ss 0.5 -i output/Clearwater_Mugg_&_Bean_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Clearwater_Mugg_&_Bean_1920x1080.jpg
+2026-03-09 21:46:48,067  INFO      Running: ffmpeg -y -ss 0.5 -i output/Clearwater_Pick_n_Pay_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Clearwater_Pick_n_Pay_1920x1080.jpg
+2026-03-09 21:46:48,139  INFO      Running: ffmpeg -y -ss 0.5 -i output/Hype_Park_3520x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Hype_Park_3520x1920.jpg
+2026-03-09 21:46:48,277  INFO      Running: ffmpeg -y -ss 0.5 -i output/Menlyn_Aviary_Court_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Menlyn_Aviary_Court_1920x1080.jpg
+2026-03-09 21:46:48,348  INFO      Running: ffmpeg -y -ss 0.5 -i output/Monte_Casino_Exit_to_Piazza_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Monte_Casino_Exit_to_Piazza_1920x1080.jpg
+2026-03-09 21:46:48,417  INFO      Running: ffmpeg -y -ss 0.5 -i output/Monte_Casino_Fego_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Monte_Casino_Fego_1920x1080.jpg
+2026-03-09 21:46:48,491  INFO      Running: ffmpeg -y -ss 0.5 -i output/Monte_Casino_Nikos_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Monte_Casino_Nikos_1920x1080.jpg
+2026-03-09 21:46:48,559  INFO      Running: ffmpeg -y -ss 0.5 -i output/Rosebank_Mall_1536x896.mp4 -vframes 1 -q:v 3 previews/thumb_Rosebank_Mall_1536x896.jpg
+2026-03-09 21:46:48,618  INFO      Running: ffmpeg -y -ss 0.5 -i output/Woodlands_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Woodlands_1920x1080.jpg
+2026-03-09 21:54:10,074  INFO      Running: ffmpeg -y -ss 0.5 -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 21:54:10,598  INFO      smart_crop: extracted 3 keyframes from 2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4
+2026-03-09 21:54:11,222  INFO      smart_crop: 27 total importance regions detected
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→3520x1920  crop=(0,60)  content_centre=(1933,1040)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1536x896  crop=(58,0)  content_centre=(875,470)
+2026-03-09 21:54:11,248  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:17,753  INFO      Running: ffmpeg -y -ss 0.5 -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 22:00:18,274  INFO      smart_crop: extracted 3 keyframes from 2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4
+2026-03-09 22:00:18,894  INFO      smart_crop: 27 total importance regions detected
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→3520x1920  crop=(0,60)  content_centre=(1933,1040)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1920x1080  crop=(0,0)  content_centre=(1054,567)
+2026-03-09 22:00:18,920  INFO      smart_crop: 1920x1080→1536x896  crop=(58,0)  content_centre=(875,470)
+2026-03-09 22:01:21,152  INFO      Running: ffmpeg -y -ss 0.5 -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 22:01:21,675  INFO      smart_crop: extracted 3 keyframes from 2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4
+2026-03-09 22:01:22,311  INFO      smart_crop: 27 total importance regions detected
+2026-03-09 22:01:22,336  INFO      smart_crop: 1920x1080→1080x1920  crop=(1335,0)  content_centre=(1875,1008)
+2026-03-09 22:01:28,958  INFO      Running: ffmpeg -y -ss 0.5 -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-09 22:01:29,477  INFO      smart_crop: extracted 3 keyframes from 2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4
+2026-03-09 22:01:30,097  INFO      smart_crop: 27 total importance regions detected
+2026-03-09 22:01:30,122  INFO      smart_crop: 1920x1080→1080x1920  crop=(1335,0)  content_centre=(1875,1008)
+2026-03-09 22:01:30,126  INFO      Running: ffmpeg -y -i input/2026-LIV-S-AFRICA_15-Sec_1920x1080__SteynCity.mp4 -vf scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:1335:0 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/Digi_Engage_1080x1920.mp4
+2026-03-09 22:01:32,972  INFO      Exported Digi_Engage_1080x1920.mp4
+2026-03-09 22:01:32,973  INFO      Running: ffmpeg -y -ss 0.5 -i output/Digi_Engage_1080x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Digi_Engage_1080x1920.jpg
+2026-03-10 10:42:38,204  INFO      Running: ffmpeg -y -i input/compress_HYGTHS28344-Boksburg-Hyper-Digital_Portrait_Final-1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_HYGTHS28344-Boksburg-Hyper-Digital_Portrait_Final-1.mp4
+2026-03-10 10:42:46,627  INFO      Running: ffmpeg -y -i input/compress_HYGTHS28344-Boksburg-Hyper-Digital_Portrait_Final-1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_HYGTHS28344-Boksburg-Hyper-Digital_Portrait_Final-1.mp4
+2026-03-10 11:37:16,693  INFO      Running: ffmpeg -y -ss 0.5 -i input/10019526_1280x704_DOOH 1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 11:37:17,481  INFO      smart_crop: extracted 3 keyframes from 10019526_1280x704_DOOH 1.mp4
+2026-03-10 11:37:17,986  INFO      smart_crop: 19 total importance regions detected
+2026-03-10 11:37:18,007  INFO      smart_crop: 1280x704→1920x1080  crop=(0,0)  content_centre=(939,572)
+2026-03-10 11:37:22,064  INFO      Running: ffmpeg -y -ss 0.5 -i input/10019526_1280x704_DOOH 1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 11:37:22,457  INFO      smart_crop: extracted 3 keyframes from 10019526_1280x704_DOOH 1.mp4
+2026-03-10 11:37:22,860  INFO      smart_crop: 19 total importance regions detected
+2026-03-10 11:37:22,865  INFO      smart_crop: 1280x704→1920x1080  crop=(0,0)  content_centre=(939,572)
+2026-03-10 11:37:22,867  INFO      Running: ffmpeg -y -i input/10019526_1280x704_DOOH 1.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/HD_—_1920×1080_1920x1080.mp4
+2026-03-10 11:37:26,077  INFO      Exported HD_—_1920×1080_1920x1080.mp4
+2026-03-10 11:37:26,079  INFO      Running: ffmpeg -y -ss 0.5 -i output/HD_—_1920×1080_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_HD_—_1920×1080_1920x1080.jpg
+2026-03-10 11:37:30,029  INFO      Running: ffmpeg -y -ss 0.5 -i input/10019526_1280x704_DOOH 1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 11:37:30,425  INFO      smart_crop: extracted 3 keyframes from 10019526_1280x704_DOOH 1.mp4
+2026-03-10 11:37:30,839  INFO      smart_crop: 19 total importance regions detected
+2026-03-10 11:37:30,845  INFO      smart_crop: 1280x704→1920x1080  crop=(0,0)  content_centre=(939,572)
+2026-03-10 13:36:31,047  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Gateway Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:36:31,251  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Gateway Mov.mp4
+2026-03-10 13:36:31,644  INFO      smart_crop: 17 total importance regions detected
+2026-03-10 13:36:31,657  INFO      smart_crop: 1920x402→3052x640  crop=(6,0)  content_centre=(1589,423)
+2026-03-10 13:36:38,431  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Gateway Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:36:38,636  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Gateway Mov.mp4
+2026-03-10 13:36:39,018  INFO      smart_crop: 17 total importance regions detected
+2026-03-10 13:36:39,029  INFO      smart_crop: 1920x402→3052x640  crop=(6,0)  content_centre=(1589,423)
+2026-03-10 13:36:39,030  INFO      Running: ffmpeg -y -i input/27841T Nexes OTC Malls Screen Indian Gateway Mov.mp4 -vf scale=3052:640:force_original_aspect_ratio=increase,crop=3052:640:6:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Gateway_Digi_Impact_3052x640.mp4
+2026-03-10 13:36:40,633  INFO      Exported Gateway_Digi_Impact_3052x640.mp4
+2026-03-10 13:36:40,634  INFO      Running: ffmpeg -y -ss 0.5 -i output/Gateway_Digi_Impact_3052x640.mp4 -vframes 1 -q:v 3 previews/thumb_Gateway_Digi_Impact_3052x640.jpg
+2026-03-10 13:36:45,284  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Gateway Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:36:45,483  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Gateway Mov.mp4
+2026-03-10 13:36:45,891  INFO      smart_crop: 17 total importance regions detected
+2026-03-10 13:36:45,904  INFO      smart_crop: 1920x402→3052x640  crop=(6,0)  content_centre=(1589,423)
+2026-03-10 13:42:43,128  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Gateway Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:42:43,334  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Gateway Mov.mp4
+2026-03-10 13:42:43,726  INFO      smart_crop: 26 total importance regions detected
+2026-03-10 13:42:43,739  INFO      smart_crop: 1920x402→3052x640  crop=(6,0)  content_centre=(1586,323)
+2026-03-10 13:42:53,832  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Gateway Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:42:54,041  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Gateway Mov.mp4
+2026-03-10 13:42:54,441  INFO      smart_crop: 26 total importance regions detected
+2026-03-10 13:42:54,453  INFO      smart_crop: 1920x402→3052x640  crop=(6,0)  content_centre=(1586,323)
+2026-03-10 13:42:54,454  INFO      Running: ffmpeg -y -i input/27841T Nexes OTC Malls Screen Gateway Mov.mp4 -vf scale=3052:640:force_original_aspect_ratio=increase,crop=3052:640:6:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Gateway_Digi_Impact_3052x640.mp4
+2026-03-10 13:42:56,109  INFO      Exported Gateway_Digi_Impact_3052x640.mp4
+2026-03-10 13:42:56,110  INFO      Running: ffmpeg -y -ss 0.5 -i output/Gateway_Digi_Impact_3052x640.mp4 -vframes 1 -q:v 3 previews/thumb_Gateway_Digi_Impact_3052x640.jpg
+2026-03-10 13:42:59,220  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Gateway Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:42:59,429  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Gateway Mov.mp4
+2026-03-10 13:42:59,860  INFO      smart_crop: 26 total importance regions detected
+2026-03-10 13:42:59,872  INFO      smart_crop: 1920x402→3052x640  crop=(6,0)  content_centre=(1586,323)
+2026-03-10 13:46:54,205  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:46:54,419  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4
+2026-03-10 13:46:54,833  INFO      smart_crop: 24 total importance regions detected
+2026-03-10 13:46:54,847  INFO      smart_crop: 1920x460→3200x768  crop=(6,0)  content_centre=(1772,393)
+2026-03-10 13:47:07,340  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:47:07,557  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4
+2026-03-10 13:47:08,006  INFO      smart_crop: 24 total importance regions detected
+2026-03-10 13:47:08,019  INFO      smart_crop: 1920x460→3200x768  crop=(6,0)  content_centre=(1772,393)
+2026-03-10 13:47:08,020  INFO      Running: ffmpeg -y -i input/27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4 -vf scale=3200:768:force_original_aspect_ratio=increase,crop=3200:768:6:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Menlyn_Cape_Union_Mart_3200x768.mp4
+2026-03-10 13:47:10,211  INFO      Exported Menlyn_Cape_Union_Mart_3200x768.mp4
+2026-03-10 13:47:10,213  INFO      Running: ffmpeg -y -ss 0.5 -i output/Menlyn_Cape_Union_Mart_3200x768.mp4 -vframes 1 -q:v 3 previews/thumb_Menlyn_Cape_Union_Mart_3200x768.jpg
+2026-03-10 13:47:13,607  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:47:13,821  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4
+2026-03-10 13:47:14,266  INFO      smart_crop: 24 total importance regions detected
+2026-03-10 13:47:14,278  INFO      smart_crop: 1920x460→3200x768  crop=(6,0)  content_centre=(1772,393)
+2026-03-10 13:53:35,051  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:53:35,267  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4
+2026-03-10 13:53:35,701  INFO      smart_crop: 24 total importance regions detected
+2026-03-10 13:53:35,714  INFO      smart_crop: 1920x460→3200x768  crop=(6,0)  content_centre=(1772,393)
+2026-03-10 13:53:35,715  INFO      Running: ffmpeg -y -i input/27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4 -vf scale=3200:768:force_original_aspect_ratio=increase,crop=3200:768:6:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Menlyn_Cape_Union_Mart_3200x768.mp4
+2026-03-10 13:53:37,982  INFO      Exported Menlyn_Cape_Union_Mart_3200x768.mp4
+2026-03-10 13:53:37,983  INFO      Running: ffmpeg -y -ss 0.5 -i output/Menlyn_Cape_Union_Mart_3200x768.mp4 -vframes 1 -q:v 3 previews/thumb_Menlyn_Cape_Union_Mart_3200x768.jpg
+2026-03-10 13:53:41,174  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:53:41,396  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Man Menlyn 2 Mov.mp4
+2026-03-10 13:53:41,893  INFO      smart_crop: 24 total importance regions detected
+2026-03-10 13:53:41,906  INFO      smart_crop: 1920x460→3200x768  crop=(6,0)  content_centre=(1772,393)
+2026-03-10 13:58:08,141  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Menlyn Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:58:08,367  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Menlyn Mov.mp4
+2026-03-10 13:58:08,807  INFO      smart_crop: 31 total importance regions detected
+2026-03-10 13:58:08,820  INFO      smart_crop: 1920x460→3200x768  crop=(6,0)  content_centre=(1626,396)
+2026-03-10 13:58:10,186  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Menlyn Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 13:58:10,391  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Menlyn Mov.mp4
+2026-03-10 13:58:10,833  INFO      smart_crop: 31 total importance regions detected
+2026-03-10 13:58:10,846  INFO      smart_crop: 1920x460→3200x768  crop=(6,0)  content_centre=(1626,396)
+2026-03-10 13:58:10,847  INFO      Running: ffmpeg -y -i input/27841T Nexes OTC Malls Screen Menlyn Mov.mp4 -vf scale=3200:768:force_original_aspect_ratio=increase,crop=3200:768:6:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Menlyn_Cape_Union_Mart_3200x768.mp4
+2026-03-10 13:58:13,207  INFO      Exported Menlyn_Cape_Union_Mart_3200x768.mp4
+2026-03-10 13:58:13,208  INFO      Running: ffmpeg -y -ss 0.5 -i output/Menlyn_Cape_Union_Mart_3200x768.mp4 -vframes 1 -q:v 3 previews/thumb_Menlyn_Cape_Union_Mart_3200x768.jpg
+2026-03-10 14:38:11,803  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Pavillion Mall 2 Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 14:38:11,949  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Pavillion Mall 2 Mov.mp4
+2026-03-10 14:38:12,350  INFO      smart_crop: 21 total importance regions detected
+2026-03-10 14:38:12,355  INFO      smart_crop: 560x1080→1080x1920  crop=(0,15)  content_centre=(486,975)
+2026-03-10 14:38:18,160  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Pavillion Mall 2 Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 14:38:18,305  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Pavillion Mall 2 Mov.mp4
+2026-03-10 14:38:18,704  INFO      smart_crop: 21 total importance regions detected
+2026-03-10 14:38:18,708  INFO      smart_crop: 560x1080→1080x1920  crop=(0,15)  content_centre=(486,975)
+2026-03-10 14:38:18,710  INFO      Running: ffmpeg -y -i input/27841T Nexes OTC Malls Screen Pavillion Mall 2 Mov.mp4 -vf scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:0:15 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Pavilion_Fountain_Court_1080x1920.mp4
+2026-03-10 14:38:19,929  INFO      Exported Pavilion_Fountain_Court_1080x1920.mp4
+2026-03-10 14:38:19,931  INFO      Running: ffmpeg -y -ss 0.5 -i output/Pavilion_Fountain_Court_1080x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Pavilion_Fountain_Court_1080x1920.jpg
+2026-03-10 14:38:22,675  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Pavillion Mall 2 Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 14:38:22,825  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Pavillion Mall 2 Mov.mp4
+2026-03-10 14:38:23,268  INFO      smart_crop: 21 total importance regions detected
+2026-03-10 14:38:23,272  INFO      smart_crop: 560x1080→1080x1920  crop=(0,15)  content_centre=(486,975)
+2026-03-10 14:39:00,473  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Man Pavillion Mall Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 14:39:00,627  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Man Pavillion Mall Mov.mp4
+2026-03-10 14:39:01,031  INFO      smart_crop: 8 total importance regions detected
+2026-03-10 14:39:01,036  INFO      smart_crop: 560x1080→3052x640  crop=(0,2494)  content_centre=(1444,2815)
+2026-03-10 14:39:01,037  INFO      smart_crop: 560x1080→1080x1920  crop=(0,36)  content_centre=(511,997)
+2026-03-10 14:39:03,187  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Man Pavillion Mall Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 14:39:03,338  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Man Pavillion Mall Mov.mp4
+2026-03-10 14:39:03,720  INFO      smart_crop: 8 total importance regions detected
+2026-03-10 14:39:03,724  INFO      smart_crop: 560x1080→3052x640  crop=(0,2494)  content_centre=(1444,2815)
+2026-03-10 14:39:03,724  INFO      smart_crop: 560x1080→1080x1920  crop=(0,36)  content_centre=(511,997)
+2026-03-10 14:39:03,726  INFO      Running: ffmpeg -y -i input/27841T Nexes OTC Malls Screen Indian Man Pavillion Mall Mov.mp4 -vf scale=3052:640:force_original_aspect_ratio=increase,crop=3052:640:0:2494 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Gateway_Digi_Impact_3052x640.mp4
+2026-03-10 14:39:05,033  INFO      Exported Gateway_Digi_Impact_3052x640.mp4
+2026-03-10 14:39:05,034  INFO      Running: ffmpeg -y -i input/27841T Nexes OTC Malls Screen Indian Man Pavillion Mall Mov.mp4 -vf scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:0:36 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Pavilion_Fountain_Court_1080x1920.mp4
+2026-03-10 14:39:06,314  INFO      Exported Pavilion_Fountain_Court_1080x1920.mp4
+2026-03-10 14:39:06,315  INFO      Running: ffmpeg -y -ss 0.5 -i output/Gateway_Digi_Impact_3052x640.mp4 -vframes 1 -q:v 3 previews/thumb_Gateway_Digi_Impact_3052x640.jpg
+2026-03-10 14:39:06,392  INFO      Running: ffmpeg -y -ss 0.5 -i output/Pavilion_Fountain_Court_1080x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Pavilion_Fountain_Court_1080x1920.jpg
+2026-03-10 14:39:18,218  INFO      Running: ffmpeg -y -ss 0.5 -i input/27841T Nexes OTC Malls Screen Indian Man Pavillion Mall Mov.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 14:39:18,373  INFO      smart_crop: extracted 3 keyframes from 27841T Nexes OTC Malls Screen Indian Man Pavillion Mall Mov.mp4
+2026-03-10 14:39:18,805  INFO      smart_crop: 8 total importance regions detected
+2026-03-10 14:39:18,810  INFO      smart_crop: 560x1080→3052x640  crop=(0,2494)  content_centre=(1444,2815)
+2026-03-10 14:39:18,810  INFO      smart_crop: 560x1080→1080x1920  crop=(0,36)  content_centre=(511,997)
+2026-03-10 15:02:48,434  INFO      Running: ffmpeg -y -ss 0.5 -i input/10019526_1152x640_DOOH 1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 15:02:48,754  INFO      smart_crop: extracted 3 keyframes from 10019526_1152x640_DOOH 1.mp4
+2026-03-10 15:02:49,131  INFO      smart_crop: 12 total importance regions detected
+2026-03-10 15:02:49,137  INFO      smart_crop: 1152x640→2176x1152  crop=(0,58)  content_centre=(822,672)
+2026-03-10 15:02:55,032  INFO      Running: ffmpeg -y -ss 0.5 -i input/10019526_1152x640_DOOH 1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 15:02:55,343  INFO      smart_crop: extracted 3 keyframes from 10019526_1152x640_DOOH 1.mp4
+2026-03-10 15:02:55,695  INFO      smart_crop: 12 total importance regions detected
+2026-03-10 15:02:55,699  INFO      smart_crop: 1152x640→2176x1152  crop=(0,58)  content_centre=(822,672)
+2026-03-10 15:02:55,701  INFO      Running: ffmpeg -y -i input/10019526_1152x640_DOOH 1.mp4 -vf scale=2176:1152:force_original_aspect_ratio=increase,crop=2176:1152:0:58 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Cresta_Woolworth_Screen_2176x1152.mp4
+2026-03-10 15:02:58,364  INFO      Exported Cresta_Woolworth_Screen_2176x1152.mp4
+2026-03-10 15:02:58,365  INFO      Running: ffmpeg -y -ss 0.5 -i output/Cresta_Woolworth_Screen_2176x1152.mp4 -vframes 1 -q:v 3 previews/thumb_Cresta_Woolworth_Screen_2176x1152.jpg
+2026-03-10 15:03:02,767  INFO      Running: ffmpeg -y -ss 0.5 -i input/10019526_1152x640_DOOH 1.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-10 15:03:03,083  INFO      smart_crop: extracted 3 keyframes from 10019526_1152x640_DOOH 1.mp4
+2026-03-10 15:03:03,438  INFO      smart_crop: 12 total importance regions detected
+2026-03-10 15:03:03,443  INFO      smart_crop: 1152x640→2176x1152  crop=(0,58)  content_centre=(822,672)
+2026-03-11 14:16:48,364  INFO      Running: ffmpeg -y -i input/compress_000031_ZA_LB_en_NBD_Q10Firming_GL062TC0027WaFOAgQiXxXxXx-C1_202408_Digital_10_2000x720.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_000031_ZA_LB_en_NBD_Q10Firming_GL062TC0027WaFOAgQiXxXxXx-C1_202408_Digital_10_2000x720.mp4
+2026-03-11 14:16:49,835  INFO      Running: ffmpeg -y -i input/compress_000031_ZA_LB_en_NBD_Q10Firming_GL062TC0138WaFOAgQiXxXxXx-C2_202408_Digital_10_2000x720.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_000031_ZA_LB_en_NBD_Q10Firming_GL062TC0138WaFOAgQiXxXxXx-C2_202408_Digital_10_2000x720.mp4
+2026-03-11 14:20:52,258  INFO      Running: ffmpeg -y -i input/compress_000031_ZA_LB_en_NBD_Q10Firming_GL062TC0027WaFOAgQiXxXxXx-F1_202408_Digital_10_1920x1080.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_000031_ZA_LB_en_NBD_Q10Firming_GL062TC0027WaFOAgQiXxXxXx-F1_202408_Digital_10_1920x1080.mp4
+2026-03-11 14:20:54,277  INFO      Running: ffmpeg -y -i input/compress_000031_ZA_LB_en_NBD_Q10Firming_GL062TC0138WaFOAgQiXxXxXx-F2_202408_Digital_10_1920x1080.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_000031_ZA_LB_en_NBD_Q10Firming_GL062TC0138WaFOAgQiXxXxXx-F2_202408_Digital_10_1920x1080.mp4
+2026-03-11 14:51:36,630  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:51:37,600  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 14:51:38,955  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 14:51:39,021  INFO      smart_crop: 2688x1728→1280x720  crop=(0,11)  content_centre=(591,372)
+2026-03-11 14:51:48,191  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:51:48,470  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 14:51:49,648  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 14:51:49,690  INFO      smart_crop: 2688x1728→1280x720  crop=(0,11)  content_centre=(591,372)
+2026-03-11 14:51:54,901  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:51:55,164  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 14:51:56,371  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 14:51:56,413  INFO      smart_crop: 2688x1728→1280x720  crop=(0,11)  content_centre=(591,372)
+2026-03-11 14:51:56,417  INFO      Running: ffmpeg -y -i input/TableBay_Mall Lift Screen_HD.mp4 -vf scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720:0:11 -c:v libx264 -crf 25 -preset slow -movflags +faststart output/Tyger_1280x720.mp4
+2026-03-11 14:51:59,064  INFO      Exported Tyger_1280x720.mp4
+2026-03-11 14:51:59,065  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tyger_1280x720.mp4 -vframes 1 -q:v 3 previews/thumb_Tyger_1280x720.jpg
+2026-03-11 14:52:03,481  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:52:03,751  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 14:52:05,019  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 14:52:05,065  INFO      smart_crop: 2688x1728→1280x720  crop=(0,11)  content_centre=(591,372)
+2026-03-11 14:53:40,686  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:53:40,958  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 14:53:42,143  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 14:53:42,188  INFO      smart_crop: 2688x1728→1280x720  crop=(0,11)  content_centre=(591,372)
+2026-03-11 14:53:53,434  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:53:53,696  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 14:53:54,807  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 14:53:54,849  INFO      smart_crop: 2688x1728→1280x720  crop=(0,11)  content_centre=(591,372)
+2026-03-11 14:53:54,850  INFO      Running: ffmpeg -y -i input/TableBay_Mall Lift Screen_HD.mp4 -vf scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720:0:11 -c:v libx264 -crf 28 -preset slow -movflags +faststart output/Tyger_1280x720.mp4
+2026-03-11 14:53:57,018  INFO      Exported Tyger_1280x720.mp4
+2026-03-11 14:53:57,020  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tyger_1280x720.mp4 -vframes 1 -q:v 3 previews/thumb_Tyger_1280x720.jpg
+2026-03-11 14:53:59,727  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:53:59,987  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 14:54:01,128  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 14:54:01,169  INFO      smart_crop: 2688x1728→1280x720  crop=(0,11)  content_centre=(591,372)
+2026-03-11 14:57:18,304  INFO      Running: ffmpeg -y -ss 0.5 -i input/Tygervalley Landscape HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:57:18,557  INFO      smart_crop: extracted 3 keyframes from Tygervalley Landscape HD.mp4
+2026-03-11 14:57:19,452  INFO      smart_crop: 40 total importance regions detected
+2026-03-11 14:57:19,478  INFO      smart_crop: 1920x1080→1280x720  crop=(0,0)  content_centre=(664,374)
+2026-03-11 14:57:21,791  INFO      Running: ffmpeg -y -ss 0.5 -i input/Tygervalley Landscape HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:57:22,016  INFO      smart_crop: extracted 3 keyframes from Tygervalley Landscape HD.mp4
+2026-03-11 14:57:22,838  INFO      smart_crop: 40 total importance regions detected
+2026-03-11 14:57:22,861  INFO      smart_crop: 1920x1080→1280x720  crop=(0,0)  content_centre=(664,374)
+2026-03-11 14:57:22,862  INFO      Running: ffmpeg -y -i input/Tygervalley Landscape HD.mp4 -vf scale=1280:720:force_original_aspect_ratio=increase,crop=1280:720:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Tyger_1280x720.mp4
+2026-03-11 14:57:25,288  INFO      Exported Tyger_1280x720.mp4
+2026-03-11 14:57:25,289  INFO      Running: ffmpeg -y -ss 0.5 -i output/Tyger_1280x720.mp4 -vframes 1 -q:v 3 previews/thumb_Tyger_1280x720.jpg
+2026-03-11 14:57:27,987  INFO      Running: ffmpeg -y -ss 0.5 -i input/Tygervalley Landscape HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:57:28,212  INFO      smart_crop: extracted 3 keyframes from Tygervalley Landscape HD.mp4
+2026-03-11 14:57:29,080  INFO      smart_crop: 40 total importance regions detected
+2026-03-11 14:57:29,105  INFO      smart_crop: 1920x1080→1280x720  crop=(0,0)  content_centre=(664,374)
+2026-03-11 14:59:22,417  INFO      Running: ffmpeg -y -ss 0.5 -i input/Tygervalley Landscape HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:59:22,641  INFO      smart_crop: extracted 3 keyframes from Tygervalley Landscape HD.mp4
+2026-03-11 14:59:23,434  INFO      smart_crop: 40 total importance regions detected
+2026-03-11 14:59:23,455  INFO      smart_crop: 1920x1080→1280x720  crop=(0,0)  content_centre=(664,374)
+2026-03-11 14:59:24,622  INFO      Running: ffmpeg -y -i input/compress_Tygervalley Portrait HD.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Tygervalley Portrait HD.mp4
+2026-03-11 14:59:27,251  INFO      Running: ffmpeg -y -ss 0.5 -i input/Tygervalley Landscape HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:59:27,483  INFO      smart_crop: extracted 3 keyframes from Tygervalley Landscape HD.mp4
+2026-03-11 14:59:28,309  INFO      smart_crop: 40 total importance regions detected
+2026-03-11 14:59:28,332  INFO      smart_crop: 1920x1080→1280x720  crop=(0,0)  content_centre=(664,374)
+2026-03-11 14:59:30,317  INFO      Running: ffmpeg -y -ss 0.5 -i input/Tygervalley Landscape HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 14:59:30,538  INFO      smart_crop: extracted 3 keyframes from Tygervalley Landscape HD.mp4
+2026-03-11 14:59:31,404  INFO      smart_crop: 40 total importance regions detected
+2026-03-11 14:59:31,428  INFO      smart_crop: 1920x1080→1280x720  crop=(0,0)  content_centre=(664,374)
+2026-03-11 16:02:36,883  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 16:02:37,148  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 16:02:38,326  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 16:02:38,371  INFO      smart_crop: 2688x1728→2880x1728  crop=(0,0)  content_centre=(1329,836)
+2026-03-11 16:02:43,668  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 16:02:43,918  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 16:02:44,997  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 16:02:45,037  INFO      smart_crop: 2688x1728→2880x1728  crop=(0,0)  content_centre=(1329,836)
+2026-03-11 16:02:45,040  INFO      Running: ffmpeg -y -i input/TableBay_Mall Lift Screen_HD.mp4 -vf scale=2880:1728:force_original_aspect_ratio=increase,crop=2880:1728:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/2880×1728_2880x1728.mp4
+2026-03-11 16:02:54,780  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 16:02:55,160  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 16:02:56,610  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 16:02:56,656  INFO      smart_crop: 2688x1728→2880x1728  crop=(0,0)  content_centre=(1329,836)
+2026-03-11 16:02:56,659  INFO      Running: ffmpeg -y -i input/TableBay_Mall Lift Screen_HD.mp4 -vf scale=2880:1728:force_original_aspect_ratio=increase,crop=2880:1728:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/2880×1728_2880x1728.mp4
+2026-03-11 16:02:57,160  INFO      Exported 2880×1728_2880x1728.mp4
+2026-03-11 16:03:07,508  INFO      Exported 2880×1728_2880x1728.mp4
+2026-03-11 16:03:07,509  INFO      Running: ffmpeg -y -ss 0.5 -i output/2880×1728_2880x1728.mp4 -vframes 1 -q:v 3 previews/thumb_2880×1728_2880x1728.jpg
+2026-03-11 16:03:10,389  INFO      Running: ffmpeg -y -ss 0.5 -i input/TableBay_Mall Lift Screen_HD.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-11 16:03:10,647  INFO      smart_crop: extracted 3 keyframes from TableBay_Mall Lift Screen_HD.mp4
+2026-03-11 16:03:11,784  INFO      smart_crop: 49 total importance regions detected
+2026-03-11 16:03:11,828  INFO      smart_crop: 2688x1728→2880x1728  crop=(0,0)  content_centre=(1329,836)
+2026-03-12 10:34:07,692  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:34:10,317  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366.mp4
+2026-03-12 10:34:11,284  INFO      smart_crop: 27 total importance regions detected
+2026-03-12 10:34:11,320  INFO      smart_crop: 880x1366→1080x1920  crop=(60,0)  content_centre=(600,973)
+2026-03-12 10:34:15,751  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:34:16,077  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366.mp4
+2026-03-12 10:34:16,836  INFO      smart_crop: 27 total importance regions detected
+2026-03-12 10:34:16,844  INFO      smart_crop: 880x1366→1080x1920  crop=(60,0)  content_centre=(600,973)
+2026-03-12 10:34:16,846  INFO      Running: ffmpeg -y -i input/DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366.mp4 -vf scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920:60:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Digi_Engage_1080x1920.mp4
+2026-03-12 10:34:26,143  INFO      Exported Digi_Engage_1080x1920.mp4
+2026-03-12 10:34:26,145  INFO      Running: ffmpeg -y -ss 0.5 -i output/Digi_Engage_1080x1920.mp4 -vframes 1 -q:v 3 previews/thumb_Digi_Engage_1080x1920.jpg
+2026-03-12 10:34:30,941  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:34:31,275  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_GOLDEN ACRE MALL_PRIMEDIA_880x1366.mp4
+2026-03-12 10:34:32,053  INFO      smart_crop: 27 total importance regions detected
+2026-03-12 10:34:32,062  INFO      smart_crop: 880x1366→1080x1920  crop=(60,0)  content_centre=(600,973)
+2026-03-12 10:47:25,548  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BROOKLYN MALL_PRIMEDIA_1152x640.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:47:25,812  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BROOKLYN MALL_PRIMEDIA_1152x640.mp4
+2026-03-12 10:47:26,298  INFO      smart_crop: 16 total importance regions detected
+2026-03-12 10:47:26,303  INFO      smart_crop: 1152x640→600x720  crop=(316,0)  content_centre=(616,369)
+2026-03-12 10:47:35,631  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_FOURWAYS MALL_PRIMEDIA_1536x1088.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:47:35,989  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_FOURWAYS MALL_PRIMEDIA_1536x1088.mp4
+2026-03-12 10:47:36,951  INFO      smart_crop: 22 total importance regions detected
+2026-03-12 10:47:36,980  INFO      smart_crop: 1536x1088→600x720  crop=(216,0)  content_centre=(517,382)
+2026-03-12 10:47:52,733  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:47:53,099  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4
+2026-03-12 10:47:54,346  INFO      smart_crop: 22 total importance regions detected
+2026-03-12 10:47:54,383  INFO      smart_crop: 1920x1152→600x720  crop=(274,0)  content_centre=(575,269)
+2026-03-12 10:48:01,735  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:48:02,103  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4
+2026-03-12 10:48:03,310  INFO      smart_crop: 22 total importance regions detected
+2026-03-12 10:48:03,339  INFO      smart_crop: 1920x1152→600x720  crop=(274,0)  content_centre=(575,269)
+2026-03-12 10:48:03,341  INFO      Running: ffmpeg -y -i input/DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4 -vf scale=600:720:force_original_aspect_ratio=increase,crop=600:720:274:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Boardwalk_600x720.mp4
+2026-03-12 10:48:05,491  INFO      Exported Boardwalk_600x720.mp4
+2026-03-12 10:48:05,492  INFO      Running: ffmpeg -y -ss 0.5 -i output/Boardwalk_600x720.mp4 -vframes 1 -q:v 3 previews/thumb_Boardwalk_600x720.jpg
+2026-03-12 10:48:09,421  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:48:09,794  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4
+2026-03-12 10:48:11,066  INFO      smart_crop: 22 total importance regions detected
+2026-03-12 10:48:11,097  INFO      smart_crop: 1920x1152→600x720  crop=(274,0)  content_centre=(575,269)
+2026-03-12 10:54:09,228  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:54:09,590  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4
+2026-03-12 10:54:10,792  INFO      smart_crop: 22 total importance regions detected
+2026-03-12 10:54:10,822  INFO      smart_crop: 1920x1152→600x720  crop=(274,0)  content_centre=(575,269)
+2026-03-12 10:54:15,325  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_DIGI NAV_PRIMEDIA_1080x1920.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_DIGI NAV_PRIMEDIA_1080x1920.mp4
+2026-03-12 10:54:18,288  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_DIGI NAV_PRIMEDIA_3840x2160.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_DIGI NAV_PRIMEDIA_3840x2160.mp4
+2026-03-12 10:54:29,651  INFO      Running: ffmpeg -y -ss 0.5 -i input/DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 10:54:30,015  INFO      smart_crop: extracted 3 keyframes from DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BAYSIDE LED_PRIMEDIA_1920x1152.mp4
+2026-03-12 10:54:31,255  INFO      smart_crop: 22 total importance regions detected
+2026-03-12 10:54:31,285  INFO      smart_crop: 1920x1152→600x720  crop=(274,0)  content_centre=(575,269)
+2026-03-12 13:38:11,429  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 13:38:11,739  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 13:38:12,866  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 13:38:12,915  INFO      smart_crop: 2304x1280→1920x1080  crop=(0,0)  content_centre=(910,562)
+2026-03-12 13:38:22,011  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 13:38:22,296  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 13:38:23,314  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 13:38:23,348  INFO      smart_crop: 2304x1280→1920x1080  crop=(0,0)  content_centre=(910,562)
+2026-03-12 13:38:23,351  INFO      Running: ffmpeg -y -i input/Southgate mall.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/HD_—_1920×1080_1920x1080.mp4
+2026-03-12 13:38:25,373  INFO      Exported HD_—_1920×1080_1920x1080.mp4
+2026-03-12 13:38:25,375  INFO      Running: ffmpeg -y -ss 0.5 -i output/HD_—_1920×1080_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_HD_—_1920×1080_1920x1080.jpg
+2026-03-12 13:38:29,594  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 13:38:29,880  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 13:38:30,903  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 13:38:30,938  INFO      smart_crop: 2304x1280→1920x1080  crop=(0,0)  content_centre=(910,562)
+2026-03-12 13:38:56,614  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 13:38:56,885  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 13:38:57,846  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 13:38:57,880  INFO      smart_crop: 2304x1280→1920x1080  crop=(0,0)  content_centre=(910,562)
+2026-03-12 13:38:57,882  INFO      Running: ffmpeg -y -i input/Southgate mall.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/HD_—_1920×1080_1920x1080.mp4
+2026-03-12 13:38:59,763  INFO      Exported HD_—_1920×1080_1920x1080.mp4
+2026-03-12 13:38:59,765  INFO      Running: ffmpeg -y -ss 0.5 -i output/HD_—_1920×1080_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_HD_—_1920×1080_1920x1080.jpg
+2026-03-12 13:39:04,963  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 13:39:05,232  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 13:39:06,230  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 13:39:06,265  INFO      smart_crop: 2304x1280→1920x1080  crop=(0,0)  content_centre=(910,562)
+2026-03-12 14:03:14,083  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:03:17,408  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 14:03:42,164  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 14:03:43,255  INFO      smart_crop: 2304x1280→2304x1280  crop=(0,0)  content_centre=(1079,666)
+2026-03-12 14:03:48,421  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:03:51,347  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 14:04:25,211  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 14:04:25,679  INFO      smart_crop: 2304x1280→2304x1280  crop=(0,0)  content_centre=(1079,666)
+2026-03-12 14:04:25,786  INFO      Running: ffmpeg -y -i input/Southgate mall.mp4 -vf scale=2304:1280:force_original_aspect_ratio=increase,crop=2304:1280:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-12 14:04:34,686  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:04:43,240  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 14:05:27,341  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:05:28,434  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 14:05:28,970  INFO      Exported Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-12 14:05:31,026  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 14:05:59,765  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 14:06:00,265  INFO      smart_crop: 2304x1280→2304x1280  crop=(0,0)  content_centre=(1079,666)
+2026-03-12 14:06:00,281  INFO      Running: ffmpeg -y -i input/Southgate mall.mp4 -vf scale=2304:1280:force_original_aspect_ratio=increase,crop=2304:1280:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-12 14:06:07,465  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:06:07,863  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 14:06:09,343  INFO      Exported Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-12 14:06:09,366  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 14:06:09,399  INFO      smart_crop: 2304x1280→2304x1280  crop=(0,0)  content_centre=(1079,666)
+2026-03-12 14:06:09,400  INFO      Running: ffmpeg -y -i input/Southgate mall.mp4 -vf scale=2304:1280:force_original_aspect_ratio=increase,crop=2304:1280:0:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-12 14:06:11,398  INFO      Exported Southgate_Food_Court_Digi_Impact_2304x1280.mp4
+2026-03-12 14:06:11,399  INFO      Running: ffmpeg -y -ss 0.5 -i output/Southgate_Food_Court_Digi_Impact_2304x1280.mp4 -vframes 1 -q:v 3 previews/thumb_Southgate_Food_Court_Digi_Impact_2304x1280.jpg
+2026-03-12 14:06:13,713  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:06:13,993  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 14:06:14,947  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 14:06:14,980  INFO      smart_crop: 2304x1280→2304x1280  crop=(0,0)  content_centre=(1079,666)
+2026-03-12 14:07:51,708  INFO      Running: ffmpeg -y -ss 0.5 -i input/HD_—_1920×1080_1920x1080-2.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:07:51,981  INFO      smart_crop: extracted 3 keyframes from HD_—_1920×1080_1920x1080-2.mp4
+2026-03-12 14:07:52,753  INFO      smart_crop: 71 total importance regions detected
+2026-03-12 14:07:52,782  INFO      smart_crop: 1920x1080→1536x1152  crop=(189,0)  content_centre=(957,601)
+2026-03-12 14:07:55,560  INFO      Running: ffmpeg -y -ss 0.5 -i input/HD_—_1920×1080_1920x1080-2.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:07:55,824  INFO      smart_crop: extracted 3 keyframes from HD_—_1920×1080_1920x1080-2.mp4
+2026-03-12 14:07:56,613  INFO      smart_crop: 71 total importance regions detected
+2026-03-12 14:07:56,641  INFO      smart_crop: 1920x1080→1536x1152  crop=(189,0)  content_centre=(957,601)
+2026-03-12 14:07:56,642  INFO      Running: ffmpeg -y -i input/HD_—_1920×1080_1920x1080-2.mp4 -vf scale=1536:1152:force_original_aspect_ratio=increase,crop=1536:1152:189:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/1536×1152_1536x1152.mp4
+2026-03-12 14:07:58,287  INFO      Exported 1536×1152_1536x1152.mp4
+2026-03-12 14:07:58,288  INFO      Running: ffmpeg -y -ss 0.5 -i output/1536×1152_1536x1152.mp4 -vframes 1 -q:v 3 previews/thumb_1536×1152_1536x1152.jpg
+2026-03-12 14:08:29,921  INFO      Running: ffmpeg -y -ss 0.5 -i input/HD_—_1920×1080_1920x1080-2.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:08:30,192  INFO      smart_crop: extracted 3 keyframes from HD_—_1920×1080_1920x1080-2.mp4
+2026-03-12 14:08:30,989  INFO      smart_crop: 71 total importance regions detected
+2026-03-12 14:08:31,017  INFO      smart_crop: 1920x1080→1536x1152  crop=(189,0)  content_centre=(957,601)
+2026-03-12 14:08:39,733  INFO      Running: ffmpeg -y -ss 0.5 -i input/HD_—_1920×1080_1920x1080-2.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:08:40,009  INFO      smart_crop: extracted 3 keyframes from HD_—_1920×1080_1920x1080-2.mp4
+2026-03-12 14:08:40,799  INFO      smart_crop: 71 total importance regions detected
+2026-03-12 14:08:40,826  INFO      smart_crop: 1920x1080→1536x1152  crop=(189,0)  content_centre=(957,601)
+2026-03-12 14:08:40,828  INFO      Running: ffmpeg -y -i input/HD_—_1920×1080_1920x1080-2.mp4 -vf scale=1536:1152:force_original_aspect_ratio=increase,crop=1536:1152:189:0 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/1536×1152_1536x1152.mp4
+2026-03-12 14:08:42,448  INFO      Exported 1536×1152_1536x1152.mp4
+2026-03-12 14:08:42,450  INFO      Running: ffmpeg -y -ss 0.5 -i output/1536×1152_1536x1152.mp4 -vframes 1 -q:v 3 previews/thumb_1536×1152_1536x1152.jpg
+2026-03-12 14:38:22,362  INFO      Running: ffmpeg -y -ss 0.5 -i input/HD_—_1920×1080_1920x1080-2.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:38:22,652  INFO      smart_crop: extracted 3 keyframes from HD_—_1920×1080_1920x1080-2.mp4
+2026-03-12 14:38:23,392  INFO      smart_crop: 71 total importance regions detected
+2026-03-12 14:38:23,418  INFO      smart_crop: 1920x1080→1536x1152  crop=(189,0)  content_centre=(957,601)
+2026-03-12 14:38:48,921  INFO      Running: ffmpeg -y -i input/compress_Boardwalk.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Boardwalk.mp4
+2026-03-12 14:38:49,664  INFO      Running: ffmpeg -y -i input/compress_Canal Walk Digi Impact cube_1.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Canal Walk Digi Impact cube_1.mp4
+2026-03-12 14:38:52,312  INFO      Running: ffmpeg -y -i input/compress_Canal Walk Digi Impact cube.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Canal Walk Digi Impact cube.mp4
+2026-03-12 14:38:54,822  INFO      Running: ffmpeg -y -i input/compress_Centre Court.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Centre Court.mp4
+2026-03-12 14:38:58,267  INFO      Running: ffmpeg -y -i input/compress_Cresta Mall - Woolworths.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Cresta Mall - Woolworths.mp4
+2026-03-12 14:39:00,678  INFO      Running: ffmpeg -y -i input/compress_Digi_Engage_1080x1920.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Digi_Engage_1080x1920.mp4
+2026-03-12 14:39:03,767  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_DIGI ENGAGE_PRIMEDIA_1080x1920.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_DIGI ENGAGE_PRIMEDIA_1080x1920.mp4
+2026-03-12 14:39:05,978  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_DIGI ENGAGE_PRIMEDIA_1920x1080.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_DIGI ENGAGE_PRIMEDIA_1920x1080.mp4
+2026-03-12 14:39:08,134  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BROOKLYN MALL_PRIMEDIA_1152x640.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_BROOKLYN MALL_PRIMEDIA_1152x640.mp4
+2026-03-12 14:39:09,339  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_CAPE GATE_PRIMEDIA_1920x1080.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_CREATIVE_1_MALL DIGI_CAPE GATE_PRIMEDIA_1920x1080.mp4
+2026-03-12 14:39:12,152  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_FOURWAYS MALL_PRIMEDIA_1536x1088.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_FOURWAYS MALL_PRIMEDIA_1536x1088.mp4
+2026-03-12 14:39:14,501  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_MENLYN PARK_PRIMEDIA_2048x384.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_MENLYN PARK_PRIMEDIA_2048x384.mp4
+2026-03-12 14:39:15,790  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_MENLYN PARK_PRIMEDIA_3200x768.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_MENLYN PARK_PRIMEDIA_3200x768.mp4
+2026-03-12 14:39:18,975  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_MONTE CASINO_PRIMEDIA_2688x768.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_MONTE CASINO_PRIMEDIA_2688x768.mp4
+2026-03-12 14:39:21,798  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_SOUTHGATE MALL_PRIMEDIA_2304x1280.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_SOUTHGATE MALL_PRIMEDIA_2304x1280.mp4
+2026-03-12 14:39:25,693  INFO      Running: ffmpeg -y -i input/compress_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_1280x720.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_DSTV_DOOH_BIGBROTHER_VOTE_MALL DIGI_TYGER VALLEY MALL_PRIMEDIA_1280x720.mp4
+2026-03-12 14:39:27,150  INFO      Running: ffmpeg -y -i input/compress_FOURWAYS - TEMPLATE.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_FOURWAYS - TEMPLATE.mp4
+2026-03-12 14:39:29,198  INFO      Running: ffmpeg -y -i input/compress_Fourways Promo Court.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Fourways Promo Court.mp4
+2026-03-12 14:39:31,307  INFO      Running: ffmpeg -y -i input/compress_Gardens.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Gardens.mp4
+2026-03-12 14:39:32,086  INFO      Running: ffmpeg -y -i input/compress_Hydepark Digi Impact.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Hydepark Digi Impact.mp4
+2026-03-12 14:39:37,822  INFO      Running: ffmpeg -y -i input/compress_Menlyn- Food Court (New).mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Menlyn- Food Court (New).mp4
+2026-03-12 14:39:38,487  INFO      Running: ffmpeg -y -i input/compress_Menlyn- Sky LED.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Menlyn- Sky LED.mp4
+2026-03-12 14:39:39,627  INFO      Running: ffmpeg -y -i input/compress_Retail Left and Right_1280x704.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Retail Left and Right_1280x704.mp4
+2026-03-12 14:39:40,316  INFO      Running: ffmpeg -y -i input/compress_Rosebank FNB pillar.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Rosebank FNB pillar.mp4
+2026-03-12 14:39:40,800  INFO      Running: ffmpeg -y -i input/compress_Rosebank.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Rosebank.mp4
+2026-03-12 14:39:42,149  INFO      Running: ffmpeg -y -i input/compress_Table Bay Mall - Centre Court.mp4 -c:v libx264 -crf 28 -preset medium -c:a aac -b:a 128k -movflags +faststart output/compressed_Table Bay Mall - Centre Court.mp4
+2026-03-12 14:39:46,271  INFO      Running: ffmpeg -y -ss 0.5 -i input/HD_—_1920×1080_1920x1080-2.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:39:46,537  INFO      smart_crop: extracted 3 keyframes from HD_—_1920×1080_1920x1080-2.mp4
+2026-03-12 14:39:47,247  INFO      smart_crop: 71 total importance regions detected
+2026-03-12 14:39:47,272  INFO      smart_crop: 1920x1080→1536x1152  crop=(189,0)  content_centre=(957,601)
+2026-03-12 14:39:54,778  INFO      Running: ffmpeg -y -ss 0.5 -i input/HD_—_1920×1080_1920x1080-2.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 14:39:55,149  INFO      smart_crop: extracted 3 keyframes from HD_—_1920×1080_1920x1080-2.mp4
+2026-03-12 14:39:56,050  INFO      smart_crop: 71 total importance regions detected
+2026-03-12 14:39:56,084  INFO      smart_crop: 1920x1080→1536x1152  crop=(189,0)  content_centre=(957,601)
+2026-03-12 15:35:21,920  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 15:35:22,768  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 15:35:23,714  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 15:35:23,768  INFO      smart_crop: 2304x1280→1856x464  crop=(0,305)  content_centre=(869,537)
+2026-03-12 15:35:26,854  INFO      Running: ffmpeg -y -ss 0.5 -i input/Southgate mall.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 15:35:27,094  INFO      smart_crop: extracted 3 keyframes from Southgate mall.mp4
+2026-03-12 15:35:27,981  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 15:35:28,012  INFO      smart_crop: 2304x1280→1856x464  crop=(0,305)  content_centre=(869,537)
+2026-03-12 15:35:28,019  INFO      Running: ffmpeg -y -i input/Southgate mall.mp4 -vf scale=1856:464:force_original_aspect_ratio=increase,crop=1856:464:0:305 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/1856×464_1856x464.mp4
+2026-03-12 15:35:28,942  INFO      Exported 1856×464_1856x464.mp4
+2026-03-12 15:35:28,943  INFO      Running: ffmpeg -y -ss 0.5 -i output/1856×464_1856x464.mp4 -vframes 1 -q:v 3 previews/thumb_1856×464_1856x464.jpg
+2026-03-12 22:26:41,532  INFO      Running: ffmpeg -y -ss 0.5 -i input/Hydepark Digi Impact.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 22:26:44,253  INFO      smart_crop: extracted 3 keyframes from Hydepark Digi Impact.mp4
+2026-03-12 22:26:53,606  INFO      smart_crop: YOLOv8 loaded
+2026-03-12 22:26:53,693  INFO      smart_crop: YOLO added 1 boxes
+2026-03-12 22:26:56,994  INFO      smart_crop: EasyOCR loaded
+2026-03-12 22:27:21,934  INFO      smart_crop: EasyOCR added 12 boxes
+2026-03-12 22:27:21,935  INFO      smart_crop: 83 total importance regions detected
+2026-03-12 22:27:58,364  INFO      Running: ffmpeg -y -loop 1 -i input/Untitled-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-12 22:28:03,808  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 22:28:04,696  INFO      smart_crop: extracted 3 keyframes from converted_video.mp4
+2026-03-12 22:28:23,172  INFO      smart_crop: YOLO added 51 boxes
+2026-03-12 22:28:34,604  INFO      Running: ffmpeg -y -loop 1 -i input/Untitled-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-12 22:28:40,650  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 22:28:47,553  INFO      Running: ffmpeg -y -loop 1 -i input/Untitled-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-12 22:28:48,059  INFO      smart_crop: EasyOCR added 72 boxes
+2026-03-12 22:28:48,060  INFO      smart_crop: 343 total importance regions detected
+2026-03-12 22:28:52,851  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 22:28:53,134  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1152:force_original_aspect_ratio=increase,crop=1920:1152:960:504 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Bayside_Digi_Impact_1920x1152.mp4
+2026-03-12 22:28:54,721  INFO      Exported Bayside_Digi_Impact_1920x1152.mp4
+2026-03-12 22:28:54,722  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=600:720:force_original_aspect_ratio=increase,crop=600:720:1620:720 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Boardwalk_600x720.mp4
+2026-03-12 22:28:55,445  INFO      Exported Boardwalk_600x720.mp4
+2026-03-12 22:28:55,446  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:960:540 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Brooklyn_Mall_1920x1080.mp4
+2026-03-12 22:28:56,933  INFO      Exported Brooklyn_Mall_1920x1080.mp4
+2026-03-12 22:28:56,935  INFO      Running: ffmpeg -y -ss 0.5 -i output/Bayside_Digi_Impact_1920x1152.mp4 -vframes 1 -q:v 3 previews/thumb_Bayside_Digi_Impact_1920x1152.jpg
+2026-03-12 22:28:57,069  INFO      Running: ffmpeg -y -ss 0.5 -i output/Boardwalk_600x720.mp4 -vframes 1 -q:v 3 previews/thumb_Boardwalk_600x720.jpg
+2026-03-12 22:28:57,122  INFO      Running: ffmpeg -y -ss 0.5 -i output/Brooklyn_Mall_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Brooklyn_Mall_1920x1080.jpg
+2026-03-12 22:29:21,884  INFO      Running: ffmpeg -y -loop 1 -i input/Untitled-3.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-12 22:29:27,093  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 22:34:06,579  INFO      Running: ffmpeg -y -loop 1 -i input/Untitled-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-12 22:34:10,316  INFO      Running: ffmpeg -y -loop 1 -i input/Untitled-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-12 22:34:16,550  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 22:34:27,327  INFO      Running: ffmpeg -y -loop 1 -i input/Untitled-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-12 22:34:32,299  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
+2026-03-12 22:34:32,564  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=600:720:force_original_aspect_ratio=increase,crop=600:720:1620:720 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Boardwalk_600x720.mp4
+2026-03-12 22:34:33,196  INFO      Exported Boardwalk_600x720.mp4
+2026-03-12 22:34:33,197  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080:960:540 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Brooklyn_Mall_1920x1080.mp4
+2026-03-12 22:34:34,619  INFO      Exported Brooklyn_Mall_1920x1080.mp4
+2026-03-12 22:34:34,620  INFO      Running: ffmpeg -y -i input/converted_video.mp4 -vf scale=1980:1080:force_original_aspect_ratio=increase,crop=1980:1080:930:540 -c:v libx264 -crf 18 -preset slow -movflags +faststart output/Canal_Walk_-_Centre_Court_1980x1080.mp4
+2026-03-12 22:34:36,110  INFO      Exported Canal_Walk_-_Centre_Court_1980x1080.mp4
+2026-03-12 22:34:36,111  INFO      Running: ffmpeg -y -ss 0.5 -i output/Boardwalk_600x720.mp4 -vframes 1 -q:v 3 previews/thumb_Boardwalk_600x720.jpg
+2026-03-12 22:34:36,159  INFO      Running: ffmpeg -y -ss 0.5 -i output/Brooklyn_Mall_1920x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Brooklyn_Mall_1920x1080.jpg
+2026-03-12 22:34:36,288  INFO      Running: ffmpeg -y -ss 0.5 -i output/Canal_Walk_-_Centre_Court_1980x1080.mp4 -vframes 1 -q:v 3 previews/thumb_Canal_Walk_-_Centre_Court_1980x1080.jpg
+2026-03-12 22:35:17,628  INFO      Running: ffmpeg -y -loop 1 -i input/Untitled-2.png -t 10 -vf scale=trunc(iw/2)*2:trunc(ih/2)*2,fps=25,format=yuv420p -c:v libx264 -pix_fmt yuv420p input/converted_video.mp4
+2026-03-12 22:35:22,705  INFO      Running: ffmpeg -y -ss 0.5 -i input/converted_video.mp4 -vframes 1 -q:v 3 previews/thumb.jpg
