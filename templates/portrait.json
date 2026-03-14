@@ -1,0 +1,19 @@
+{
+  "name": "Portrait Screens",
+  "safe_zones": [
+    {
+      "name": "center_content",
+      "x": 0.1,
+      "y": 0.2,
+      "width": 0.8,
+      "height": 0.6
+    }
+  ],
+  "formats": [
+    [1080, 1920],
+    [864,  1344, "Golden_Acre_Impact"],
+    [1088, 1536],
+    [1600, 2560],
+    [600,  720,  "Boardwalk"]
+  ]
+}

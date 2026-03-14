@@ -1,0 +1,11 @@
+{
+  "name": "Landscape Narrow Screens",
+  "description": "Non-standard landscape formats with taller aspect ratios",
+  "tags": ["landscape", "narrow", "variant"],
+  "formats": [
+    [1536, 1088],
+    [1536, 1152],
+    [1920, 1224],
+    [2880, 1728]
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Loch Logan",
+  "formats": [
+    [1920, 1080, "Loch_Logan"],
+    [1280, 720,  "Loch_Logan_Dischem"]
+  ],
+  "tags": [
+    "malls"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Landscape Screens",
+  "safe_zones": [
+    { "name": "top_logo",    "x": 0.05, "y": 0.05, "width": 0.3,  "height": 0.15 },
+    { "name": "bottom_legal","x": 0.05, "y": 0.85, "width": 0.9,  "height": 0.1  }
+  ],
+  "formats": [
+    [1920, 1080, "Landscape_Screens_HD"],
+    [1280, 720,  "Tyger"],
+    [1536, 896,  "Rosebank_Mall"],
+    [2176, 1152, "Cresta_Woolworths_Screen"],
+    [1920, 1152, "Bayside_Digi_Impact"],
+    [1664, 896,  "Paarl_Mall_Digi_Impact"],
+    [1040, 600,  "The_Glen"],
+    [3840, 2160, "Tygervalley_Foschini"],
+    [3520, 1920, "Hype_Park"],
+    [2304, 1280, "Southgate_Food_Court_Digi_Impact"]
+  ]
+}
