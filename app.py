@@ -493,42 +493,7 @@ def zip_outputs(files: list[Path]) -> Path:
 
 
 # ──────────────────────────────────────────────
-# UI  ─  SIDEBAR
-# ──────────────────────────────────────────────
-
-with st.sidebar:
-    st.image("https://cdn.prod.website-files.com/637c4a14cf822a674336049c/699f40327d75665a5a6c8852_9aa2876621654cf23c5bf38ab087b8f0_primedia-malls.png", use_container_width=True)
-    st.markdown("---")
-
-    st.subheader("⚙️ System")
-    if ffmpeg_available():
-        st.success("FFmpeg detected")
-    else:
-        st.error("FFmpeg not found — install it and restart.")
-
-    st.markdown("---")
-    st.subheader("🎛️ Export Settings")
-    use_smart_crop = st.toggle(
-        "🧠 Smart Crop (AI)",
-        value=True,
-        help="Uses YOLOv8 + EasyOCR to detect faces, text, logos and packshots, "
-             "then adjusts the crop origin so they stay in frame.",
-    )
-    crf    = st.slider("CRF (quality — lower = better)", 12, 28, 18, help="18 is visually lossless for H.264")
-    preset = st.selectbox("Encoding preset", ["ultrafast","fast","medium","slow","veryslow"], index=3)
-    img_duration = st.number_input("Image → Video duration (s)", 3, 60, 10)
-
-    st.markdown("---")
-    st.subheader("📋 Log")
-    if st.button("View app.log"):
-        try:
-            st.text_area("", _log_path.read_text()[-3000:], height=200)
-        except FileNotFoundError:
-            st.info("No log file yet.")
-
-
-# ──────────────────────────────────────────────
-# UI  ─  WELCOME SCREEN
+# UI  ─  WELCOME SCREEN  (must come first so st.stop() blocks everything below)
 # ──────────────────────────────────────────────
 
 if "welcomed" not in st.session_state:
@@ -598,7 +563,6 @@ if not st.session_state.welcomed:
 .wfeat-desc {{ font-size: 0.66rem; color: #aac4e8; margin-top: 3px; line-height: 1.3; }}
 
 /* Welcome CTA button — white, centred, bold */
-/* Scoped to .welcome-btn class to avoid bleeding into main app */
 .welcome-btn [data-testid="stButton"] {{
     display: flex !important;
     justify-content: center !important;
@@ -654,6 +618,45 @@ if not st.session_state.welcomed:
 
     st.stop()
 
+
+# ──────────────────────────────────────────────
+# UI  ─  SIDEBAR
+# ──────────────────────────────────────────────
+
+with st.sidebar:
+    st.image("https://cdn.prod.website-files.com/637c4a14cf822a674336049c/699f40327d75665a5a6c8852_9aa2876621654cf23c5bf38ab087b8f0_primedia-malls.png", use_container_width=True)
+    st.markdown("---")
+
+    st.subheader("⚙️ System")
+    if ffmpeg_available():
+        st.success("FFmpeg detected")
+    else:
+        st.error("FFmpeg not found — install it and restart.")
+
+    st.markdown("---")
+    st.subheader("🎛️ Export Settings")
+    use_smart_crop = st.toggle(
+        "🧠 Smart Crop (AI)",
+        value=True,
+        help="Uses YOLOv8 + EasyOCR to detect faces, text, logos and packshots, "
+             "then adjusts the crop origin so they stay in frame.",
+    )
+    crf    = st.slider("CRF (quality — lower = better)", 12, 28, 18, help="18 is visually lossless for H.264")
+    preset = st.selectbox("Encoding preset", ["ultrafast","fast","medium","slow","veryslow"], index=3)
+    img_duration = st.number_input("Image → Video duration (s)", 3, 60, 10)
+
+    st.markdown("---")
+    st.subheader("📋 Log")
+    if st.button("View app.log"):
+        try:
+            st.text_area("", _log_path.read_text()[-3000:], height=200)
+        except FileNotFoundError:
+            st.info("No log file yet.")
+
+
+# ──────────────────────────────────────────────
+# UI  ─  WELCOME SCREEN
+# ──────────────────────────────────────────────
 
 # ──────────────────────────────────────────────
 # UI  ─  MAIN
