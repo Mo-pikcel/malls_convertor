@@ -12,28 +12,24 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 # Resolve ffmpeg binary: prefer system install, fall back to imageio-ffmpeg bundle
-def _resolve_ffmpeg() -> tuple[str, str]:
-    # 1. System ffmpeg
+def _resolve_ffmpeg() -> str:
     sys_ff = shutil.which("ffmpeg")
-    sys_fp = shutil.which("ffprobe")
     if sys_ff:
         try:
             subprocess.run([sys_ff, "-version"], capture_output=True, timeout=10, check=True)
-            return sys_ff, sys_fp or sys_ff
+            return sys_ff
         except Exception:
             pass
-    # 2. imageio-ffmpeg bundled binary
     try:
         import imageio_ffmpeg as _iio
         bundled = _iio.get_ffmpeg_exe()
         subprocess.run([bundled, "-version"], capture_output=True, timeout=10, check=True)
-        return bundled, bundled
+        return bundled
     except Exception:
         pass
-    # 3. Last resort — let the OS try
-    return "ffmpeg", "ffprobe"
+    return "ffmpeg"
 
-_FFMPEG_BIN, _FFPROBE_BIN = _resolve_ffmpeg()
+_FFMPEG_BIN = _resolve_ffmpeg()
 
 # ──────────────────────────────────────────────
 # CONFIG & LOGGING
@@ -372,20 +368,19 @@ def ffmpeg_available() -> bool:
 
 
 def probe_video(path: Path) -> tuple[int, int, float]:
-    """Return (width, height, duration_seconds). Raises on failure."""
-    cmd = [
-        _FFPROBE_BIN, "-v", "error",
-        "-select_streams", "v:0",
-        "-show_entries", "stream=width,height,duration",
-        "-of", "csv=s=x:p=0",
-        str(path),
-    ]
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-    if result.returncode != 0:
-        raise RuntimeError(f"ffprobe failed: {result.stderr}")
-    parts = result.stdout.strip().split("x")
-    w, h = int(parts[0]), int(parts[1])
-    dur = float(parts[2]) if len(parts) > 2 and parts[2] else 0.0
+    """Return (width, height, duration_seconds) using OpenCV (no ffprobe needed)."""
+    import cv2
+    cap = cv2.VideoCapture(str(path))
+    if not cap.isOpened():
+        raise RuntimeError(f"Could not open video: {path.name}")
+    w   = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    h   = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
+    frames = cap.get(cv2.CAP_PROP_FRAME_COUNT)
+    dur = frames / fps if frames > 0 else 0.0
+    cap.release()
+    if w == 0 or h == 0:
+        raise RuntimeError(f"Could not read video metadata for {path.name}")
     return w, h, dur
 
 
