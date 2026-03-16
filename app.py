@@ -340,7 +340,7 @@ class Template:
 # ──────────────────────────────────────────────
 
 def ffmpeg_available() -> bool:
-    return shutil.which("ffmpeg") is not None and shutil.which("ffprobe") is not None
+    return shutil.which("ffmpeg") is not None
 
 
 def probe_video(path: Path) -> tuple[int, int, float]:
