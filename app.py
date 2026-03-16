@@ -11,6 +11,15 @@ from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Optional
 
+# Use bundled ffmpeg (imageio-ffmpeg) when system ffmpeg is not available
+try:
+    import imageio_ffmpeg as _iio_ffmpeg
+    _FFMPEG_BIN = _iio_ffmpeg.get_ffmpeg_exe()
+    _FFPROBE_BIN = shutil.which("ffprobe") or _FFMPEG_BIN  # ffprobe may not ship with imageio-ffmpeg
+except Exception:
+    _FFMPEG_BIN = "ffmpeg"
+    _FFPROBE_BIN = "ffprobe"
+
 # ──────────────────────────────────────────────
 # CONFIG & LOGGING
 # ──────────────────────────────────────────────
@@ -340,13 +349,15 @@ class Template:
 # ──────────────────────────────────────────────
 
 def ffmpeg_available() -> bool:
+    if _FFMPEG_BIN != "ffmpeg":
+        return True  # bundled binary from imageio-ffmpeg
     return shutil.which("ffmpeg") is not None
 
 
 def probe_video(path: Path) -> tuple[int, int, float]:
     """Return (width, height, duration_seconds). Raises on failure."""
     cmd = [
-        "ffprobe", "-v", "error",
+        _FFPROBE_BIN, "-v", "error",
         "-select_streams", "v:0",
         "-show_entries", "stream=width,height,duration",
         "-of", "csv=s=x:p=0",
@@ -364,7 +375,7 @@ def probe_video(path: Path) -> tuple[int, int, float]:
 def image_to_video(src: Path, dst: Path, duration: int = 10) -> None:
     """Convert a still image to a looping MP4."""
     cmd = [
-        "ffmpeg", "-y",
+        _FFMPEG_BIN, "-y",
         "-loop", "1",
         "-i", str(src),
         "-t", str(duration),
@@ -379,7 +390,7 @@ def image_to_video(src: Path, dst: Path, duration: int = 10) -> None:
 def generate_thumbnail(src: Path, dst: Path, timestamp: float = 0.5) -> None:
     """Extract a JPEG thumbnail from a video."""
     cmd = [
-        "ffmpeg", "-y",
+        _FFMPEG_BIN, "-y",
         "-ss", str(timestamp),
         "-i", str(src),
         "-vframes", "1",
@@ -405,7 +416,7 @@ def export_format(
         f"crop={width}:{height}:{crop_x}:{crop_y}"
     )
     cmd = [
-        "ffmpeg", "-y",
+        _FFMPEG_BIN, "-y",
         "-i", str(src),
         "-vf", vf,
         "-c:v", "libx264",
@@ -726,13 +737,13 @@ with tab_compress:
                         fps = fps_map[comp_level]
                         palette = OUTPUT_DIR / f"_palette_{comp_input.stem}.png"
                         _run([
-                            "ffmpeg", "-y", "-i", str(comp_input),
+                            _FFMPEG_BIN, "-y", "-i", str(comp_input),
                             "-vf", f"fps={fps},palettegen=max_colors={colours}:stats_mode=diff",
                             str(palette),
                         ])
                         comp_out = OUTPUT_DIR / f"compressed_{comp_input.stem.replace('compress_', '')}.gif"
                         _run([
-                            "ffmpeg", "-y",
+                            _FFMPEG_BIN, "-y",
                             "-i", str(comp_input),
                             "-i", str(palette),
                             "-filter_complex", f"fps={fps}[x];[x][1:v]paletteuse=dither=bayer",
@@ -741,7 +752,7 @@ with tab_compress:
                         palette.unlink(missing_ok=True)
                     else:
                         _run([
-                            "ffmpeg", "-y",
+                            _FFMPEG_BIN, "-y",
                             "-i", str(comp_input),
                             "-c:v", "libx264",
                             "-crf", str(comp_crf),
