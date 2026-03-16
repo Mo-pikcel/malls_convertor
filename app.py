@@ -11,14 +11,29 @@ from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Optional
 
-# Use bundled ffmpeg (imageio-ffmpeg) when system ffmpeg is not available
-try:
-    import imageio_ffmpeg as _iio_ffmpeg
-    _FFMPEG_BIN = _iio_ffmpeg.get_ffmpeg_exe()
-    _FFPROBE_BIN = shutil.which("ffprobe") or _FFMPEG_BIN  # ffprobe may not ship with imageio-ffmpeg
-except Exception:
-    _FFMPEG_BIN = "ffmpeg"
-    _FFPROBE_BIN = "ffprobe"
+# Resolve ffmpeg binary: prefer system install, fall back to imageio-ffmpeg bundle
+def _resolve_ffmpeg() -> tuple[str, str]:
+    # 1. System ffmpeg
+    sys_ff = shutil.which("ffmpeg")
+    sys_fp = shutil.which("ffprobe")
+    if sys_ff:
+        try:
+            subprocess.run([sys_ff, "-version"], capture_output=True, timeout=10, check=True)
+            return sys_ff, sys_fp or sys_ff
+        except Exception:
+            pass
+    # 2. imageio-ffmpeg bundled binary
+    try:
+        import imageio_ffmpeg as _iio
+        bundled = _iio.get_ffmpeg_exe()
+        subprocess.run([bundled, "-version"], capture_output=True, timeout=10, check=True)
+        return bundled, bundled
+    except Exception:
+        pass
+    # 3. Last resort — let the OS try
+    return "ffmpeg", "ffprobe"
+
+_FFMPEG_BIN, _FFPROBE_BIN = _resolve_ffmpeg()
 
 # ──────────────────────────────────────────────
 # CONFIG & LOGGING
@@ -349,9 +364,11 @@ class Template:
 # ──────────────────────────────────────────────
 
 def ffmpeg_available() -> bool:
-    if _FFMPEG_BIN != "ffmpeg":
-        return True  # bundled binary from imageio-ffmpeg
-    return shutil.which("ffmpeg") is not None
+    try:
+        r = subprocess.run([_FFMPEG_BIN, "-version"], capture_output=True, timeout=10)
+        return r.returncode == 0
+    except Exception:
+        return False
 
 
 def probe_video(path: Path) -> tuple[int, int, float]:
@@ -640,9 +657,9 @@ with st.sidebar:
 
     st.subheader("⚙️ System")
     if ffmpeg_available():
-        st.success("FFmpeg detected")
+        st.success(f"FFmpeg detected (`{_FFMPEG_BIN}`)")
     else:
-        st.error("FFmpeg not found — install it and restart.")
+        st.error(f"FFmpeg not found (tried: `{_FFMPEG_BIN}`)")
 
     st.markdown("---")
     st.subheader("🎛️ Export Settings")
