@@ -11,20 +11,16 @@ from pathlib import Path
 from dataclasses import dataclass, field
 from typing import Optional
 
-# Resolve ffmpeg binary: prefer system install, fall back to imageio-ffmpeg bundle
+# Resolve ffmpeg binary path (no subprocess at startup — just find the binary)
 def _resolve_ffmpeg() -> str:
+    # 1. System install (packages.txt installs this on Streamlit Cloud)
     sys_ff = shutil.which("ffmpeg")
     if sys_ff:
-        try:
-            subprocess.run([sys_ff, "-version"], capture_output=True, timeout=10, check=True)
-            return sys_ff
-        except Exception:
-            pass
+        return sys_ff
+    # 2. imageio-ffmpeg bundled binary
     try:
         import imageio_ffmpeg as _iio
-        bundled = _iio.get_ffmpeg_exe()
-        subprocess.run([bundled, "-version"], capture_output=True, timeout=10, check=True)
-        return bundled
+        return _iio.get_ffmpeg_exe()
     except Exception:
         pass
     return "ffmpeg"
